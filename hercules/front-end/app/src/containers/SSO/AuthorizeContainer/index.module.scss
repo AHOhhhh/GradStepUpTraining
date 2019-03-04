@@ -1,0 +1,23 @@
+@import "../../../../styles/variables";
+
+.authorize-container {
+  width: 400px;
+  margin: 200px auto;
+  text-align: center;
+  padding: 60px 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-shadow: 0 0 4px #ccc;
+  background: white;
+
+  h1 {
+    font-size: 40px;
+    margin: 4px 0;
+  }
+
+  p {
+    padding: 10px 0;
+    font-size: 16px;
+    color: #666;
+  }
+}

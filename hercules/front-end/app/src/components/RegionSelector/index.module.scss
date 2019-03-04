@@ -1,0 +1,76 @@
+.cascader :global {
+
+  text-align: left;
+
+  .country {
+    display: inline-block;
+    width: 30%;
+    text-align: left;
+  }
+
+  .region {
+    display: inline-block;
+    width: 66%;
+    float: right;
+  }
+
+  .ant-cascader-menu {
+    display: block;
+    white-space: normal;
+    width: 300px;
+  }
+
+  .ant-cascader-menu-item {
+    display: inline-block;
+    width: 60px;
+    margin-right: 0;
+    padding-right: 0;
+  }
+
+  .ant-select-selection {
+    height: 40px;
+  }
+
+  .ant-select-selection--single {
+    height: 40px;
+  }
+
+  .ant-select-selection__rendered {
+    height: 40px;
+    line-height: 40px;
+  }
+
+  .ant-form-item-control-wrapper {
+    text-align: left;
+  }
+
+  .ant-form-item-control {
+    text-align: left;
+  }
+
+}
+
+.ant-form-item-control-wrapper {
+  text-align: left;
+}
+
+.ant-form-item-control {
+  text-align: left;
+}
+
+.ant-cascader-menu {
+  display: block;
+  white-space: normal;
+  width: 300px;
+}
+
+.ant-cascader-menu-item {
+  display: inline-block;
+  width: 60px;
+  margin-right: 0;
+  padding-right: 0;
+}
+
+.ant-select-selection--single {
+  height: 40px;
+}

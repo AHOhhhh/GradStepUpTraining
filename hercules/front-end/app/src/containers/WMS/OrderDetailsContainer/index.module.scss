@@ -1,0 +1,196 @@
+@import "../../../../styles/variables";
+@import "../../../../styles/colors";
+@import "../share/styles/index.module.scss";
+
+.order-details {
+  margin-bottom: 20px;
+
+  .title {
+    margin-top: 32px;
+    margin-bottom: 16px;
+    font-size: 32px;
+    line-height: 1;
+    text-align: left;
+    color: #686767;
+  }
+
+  .stepBox {
+    height: 143px;
+    padding: 33px 0;
+  }
+
+  .content-wrapper {
+    padding: 32px;
+    margin: 20px 0;
+    background-color: #FFFFFF;
+
+    .content {
+      padding-top: 34px;
+      padding-bottom: 8px;
+    }
+  }
+
+  .label, .text, .price, .payment-btn {
+    display: inline-block;
+  }
+
+  .auditPayment {
+    button {
+      width: 259px;
+      height: 50px;
+      font-size: 18px;
+      margin-bottom: 16px;
+    }
+
+    .desc {
+      font-size: 12px;
+      color: #646464;
+
+      .icon {
+        margin-right: 5px;
+        color: #f19707;
+      }
+    }
+  }
+
+  .text .paymentText {
+    display: inline-block;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 44px;
+    text-align: left;
+    color: #1D16C8;
+  }
+
+  .order-code {
+    line-height: 1.07;
+    position: relative;
+  }
+
+  .order-status {
+    line-height: 1.07;
+    .label {
+      line-height: 3;
+    }
+
+    .price {
+      margin-left: 10px;
+      line-height: 1;
+      text-align: left;
+    }
+
+    .statement {
+      margin-top: 24px;
+
+      .phone-number {
+        color: $meta-title-color;
+      }
+    }
+
+    .payment-btn {
+      .primary {
+        width: auto;
+        padding: 10px;
+        vertical-align: middle;
+        font-size: 18px;
+        line-height: 1.33;
+        text-align: center;
+        height: 50px;
+        background-color: #ff3645;
+        color: #ffffff;
+        &:disabled {
+          cursor: not-allowed;
+          background-color: #eaeaea;
+        }
+        &.wait-for-confirm {
+          background-color: rgba(0, 0, 0, 0.3);
+        }
+      }
+
+      .result-statement {
+        width: 940px;
+        font-size: 12px;
+        color: $navigation-background-color;
+        padding: 8px 0;
+        .failure-icon{
+          vertical-align: top;
+        }
+      }
+
+      .failure-comment {
+        display: inline;
+        font-size: 12px;
+        color: $font-black;
+        margin-left: 5px;
+        div {
+          margin-left: 21px;
+          word-break: break-all;
+        }
+        span {
+          color: $navigation-background-color;
+        }
+      }
+    }
+  }
+
+  .header-title {
+    font-weight: bold;
+    padding-bottom: 16px;
+    font-size: 24px;
+    line-height: 1.13;
+    text-align: left;
+    color: #686767;
+    padding-left: 8px;
+    border-bottom: dashed 1px rgba(221, 221, 221, 0.5);
+  }
+
+  .order-details {
+
+    .approved-price {
+      color: #ff3645;
+      font-family: Arial;
+      font-size: 22px;
+      line-height: 1;
+      text-align: left;
+    }
+    table {
+      border-collapse: collapse;
+      border-top: 4px solid #e9e9e9;
+      border-bottom: 2px solid #e9e9e9;
+
+      th, td {
+        padding: 5px;
+        width: 308px;
+      }
+      td {
+        text-align: left;
+        height: 60px;
+        padding-left: 75px;
+        font-weight: bold;
+        color: #686767;
+      }
+      tr:nth-child(even) {
+        background-color: #f4f3f3;
+      }
+      tr:nth-child(odd) {
+        background-color: $content-background-color;
+      }
+      th {
+        font-weight: bold;
+        text-align: center;
+        line-height: 1.5;
+        color: $font-light-gray;
+        height: 36px;
+      }
+    }
+
+    .enterprise-name {
+      hr {
+        height: 1px;
+        border: none;
+        border-top: solid 1px #f5f5f5;
+        margin-bottom: 15px;
+      }
+    }
+  }
+}

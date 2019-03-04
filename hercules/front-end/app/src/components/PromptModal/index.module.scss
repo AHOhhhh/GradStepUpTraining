@@ -1,0 +1,61 @@
+@import "../../../styles/colors";
+
+.prompt-modal :global {
+
+  .ant-modal-body {
+    padding: 60px;
+    padding-bottom: 30px;
+
+    .content {
+      .icon {
+        font-size: 31px;
+        color: $main-color;
+        margin-right: 16px;
+        vertical-align: top;
+
+        &.warning {
+          color: $sub-color;
+        }
+      }
+
+      .text {
+        width: 292px;
+        height: 60px;
+        font-size: 20px;
+        line-height: 1.5;
+        display: inline-block;
+        vertical-align: top;
+      }
+    }
+
+    .operation {
+      margin-top: 40px;
+      text-align: right;
+
+      .button {
+        width: 140px;
+        height: 40px;
+        border-radius: 4px;
+        background-color: #4f4fdf;
+        box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.12);
+
+        span {
+          height: 27px;
+          font-size: 18px;
+          line-height: 1.5;
+          text-align: center;
+          color: #ffffff;
+        }
+      }
+
+      &.with-cancel {
+        text-align: center;
+
+        button:first-child {
+          margin-right: 15px;
+        }
+      }
+    }
+
+  }
+}

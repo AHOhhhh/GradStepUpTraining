@@ -1,0 +1,86 @@
+@import "../../../../../styles/colors";
+
+.contacts-box {
+  padding: 8px 0 8px 40px;
+  background-color: rgba(216, 216, 216, 0.1);
+
+  .table-like {
+    display: table;
+    width: 100%;
+
+    .row {
+      display: table-row;
+
+      .cell {
+        display: table-cell;
+        font-size: 12px;
+        line-height: 1.5;
+        text-align: left;
+        color: $font-light-gray;
+        opacity: 0.5;
+
+        &:nth-child(1) {
+          width: 40px;
+          .ant-radio-wrapper {
+            top: -1px;
+          }
+        }
+        &:nth-child(2) {
+          width: 320px;
+        }
+        &:nth-child(3) {
+          width: 200px;
+          word-wrap: break-word;
+        }
+        &:nth-last-child(1){
+          text-align: right;
+          color: #4085de;
+        }
+
+        .sub-cell {
+          display: inline-block;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .operation {
+    .more, .add {
+      display: inline-block;
+      cursor: pointer;
+      line-height: 1.5;
+      text-align: left;
+      color: #4085de;
+    }
+  }
+}
+
+.shipping-contacts {
+  padding: 16px;
+  background-color: #e9e9e9;
+
+  .contacts-title {
+    border-bottom: solid 1px #DBD9DB;
+    margin-bottom: 6px;
+
+    h5 {
+      display: inline;
+      font-size: 14px;
+      line-height: 18px;
+      margin-right: 50px;
+    }
+
+    .address-editor {
+      float: right;
+    }
+  }
+
+  .contacts-content {
+    text-align: center;
+  }
+
+  p {
+    line-height: 1.8;
+  }
+}

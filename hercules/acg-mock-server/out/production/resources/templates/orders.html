@@ -1,0 +1,72 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link href="https://cdn.bootcss.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet"/>
+    <style>
+        .orders-table {
+            margin: 0 auto;
+            width: 1024px;
+        }
+    </style>
+</head>
+<body>
+<table class="orders-table table table-striped table-bordered table-hover">
+    <thead class="table-primary">
+    <tr>
+        <th scope="col">id</th>
+        <th scope="col">name</th>
+        <th scope="col">status</th>
+        <th scope="col">action</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="order : ${orders}">
+        <th scope="row" th:text="${order.getId()}"></th>
+        <td th:text="${order.getName()}"></td>
+        <td th:text="${order.getStatus()}"></td>
+        <td>
+            <div th:switch="${order.status.name()}">
+                <p th:case="CREATED">
+                    <button type="button" class="btn btn-success" th:attr="order-id=${order.getId()}">
+                        Confirm Booked
+                    </button>
+                </p>
+                <p th:case="PAYED">
+                    <button type="button" class="btn btn-success" th:attr="order-id=${order.getId()}">
+                        Update Plan
+                    </button>
+                </p>
+                <p th:case="TRANSPORTING">
+                    <button type="button" class="btn btn-success" th:attr="order-id=${order.getId()}">
+                        Update Logistics Status
+                    </button>
+                </p>
+                <p th:case="DELIVERED">
+                    <button type="button" class="btn btn-success" th:attr="order-id=${order.getId()}">
+                        Close Order
+                    </button>
+                </p>
+                <p th:case="CLOSED">Order is completed</p>
+                <p th:case="BOOKED">Order is waiting to be paid</p>
+                <p th:case="*">Invalid Status</p>
+            </div>
+        </td>
+    </tr>
+    </tbody>
+</table>
+</body>
+<footer>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(
+            $("button").click(function (event) {
+                $.post(window.location.pathname+"/order-triggers/" + $(event.target).attr("order-id"), function () {
+                    location.reload();
+                });
+            })
+        );
+    </script>
+</footer>
+</html>

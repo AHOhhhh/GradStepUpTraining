@@ -1,0 +1,33 @@
+pipeline {
+    agent {
+        label 'node'
+    }
+    stages {
+        stage('Prepare') {
+            steps {
+                sh "npm install"
+            }
+        }
+        stage('Check') {
+            steps {
+                sh "echo Check"
+            }
+        }
+        stage('Test') {
+            steps {
+                sh "echo Test"
+            }
+        }
+        stage('Publish') {
+            steps {
+                sh "npm run-script build"
+                sh "sudo ./scripts/publish.sh ${env.JOB_BASE_NAME} ${env.BUILD_ID}"
+            }
+        }
+        stage('Deploy') {
+            steps {
+                sh "sudo ./scripts/deploy.sh ${env.JOB_BASE_NAME} ${env.BUILD_ID}"
+            }
+        }
+    }
+}

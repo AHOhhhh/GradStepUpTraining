@@ -1,0 +1,17 @@
+.price-detail-modal {
+  .provider-name {
+    font-size: 22px;
+  }
+
+  .contact-number {
+    font-size: 16px;
+    margin: 15px 0px 35px 0px;
+  }
+
+}
+
+.price-detail-modal :global {
+  .ant-col-6 {
+    padding-top: 35px;
+  }
+}

@@ -1,0 +1,61 @@
+@import "../../../../styles/variables";
+@import "../../../../styles/colors";
+
+.signup-succeed {
+  margin: 20px 0 24px 0;
+
+  .step-box, .succeed-content {
+    background-color: $content-background-color;
+  }
+  .step-box {
+    height: 143px;
+    padding: 40px 180px;
+  }
+
+  .succeed-content {
+    margin-top: 10px;
+    padding: 74px 0 130px 373px;
+
+    .succeed-icon {
+      display: inline-block;
+      background-image: url("./images/success.svg");
+      background-repeat: no-repeat;
+      height: 65px;
+      width: 65px;
+      vertical-align: middle;
+      margin-right: 19px;
+    }
+
+    .succeed-info {
+      display: inline-block;
+      vertical-align: middle;
+
+      p {
+        font-size: 24px;
+        font-weight: bold;
+      }
+    }
+
+    .user-guide {
+      margin-left: 84px;
+
+      .guide-links {
+        font-size: 16px;
+        margin-bottom: 48px;
+
+        .link {
+          text-decoration: underline;
+        }
+      }
+
+      .timer {
+        color: #959495;
+      }
+
+      .highlight-span {
+        color: #f9a300;
+      }
+
+    }
+  }
+}

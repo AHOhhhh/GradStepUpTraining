@@ -1,0 +1,201 @@
+hlp:
+  services:
+    webapi-gateway:
+      host: webapi-gateway
+      port: 8080
+    user-service:
+      host: user-service
+      port: 8001
+    order-service:
+      host: order-service
+      port: 8002
+    config-server:
+      host: config-server
+      port: 8099
+    acg-mock-server:
+      host: acg-mock-server
+      port: 30000
+
+  endpoints:
+    user: http://${hlp.services.user-service.host}:${hlp.services.user-service.port}
+    order: http://${hlp.services.order-service.host}:${hlp.services.order-service.port}
+    config-server: http://${hlp.services.config-server.host}:${hlp.services.config-server.port}
+    acg-mock-server: http://${hlp.services.acg-mock-server.host}:${hlp.services.acg-mock-server.port}
+  platform:
+    service-user:
+      id: 708ccc12-bd0c-3ba2-8754-c3e39a5dd62a
+      name: platform0service
+      role: PlatformService
+    time-zone: Asia/Shanghai
+  authorization:
+    jwt:
+      secret: HerculesSecretKeyToGenJWTs
+      expires: 14400
+
+user-service:
+  ribbon:
+    listOfServers: ${hlp.services.user-service.host}:${hlp.services.user-service.port}
+
+order-service:
+  ribbon:
+    listOfServers: ${hlp.services.order-service.host}:${hlp.services.order-service.port}
+
+spring:
+  application:
+    name: webapi-gateway
+  active-profile: ${spring.profiles.active:default}
+
+server:
+  port: ${hlp.services.${spring.application.name}.port}
+
+management:
+  context-path: /system
+  security:
+    enabled: false
+
+security:
+  basic:
+    enabled: false
+
+
+
+# webapi-gateway
+
+ribbon:
+  eureka:
+    enabled: false
+
+endpoints:
+  sensitive: false
+
+zuul:
+  prefix: /webapi
+  sensitiveHeaders:
+  host:
+    socket-timeout-millis: 30000
+
+verify:
+  captcha: false
+
+
+# users
+---
+zuul:
+  routes:
+    user-operation:
+      path: /user-operations/**
+      url: ${hlp.endpoints.user}
+      stripPrefix: false
+    user:
+      path: /users/**
+      url: ${hlp.endpoints.user}
+      stripPrefix: false
+    enterprise:
+      path: /enterprises/**
+      url: ${hlp.endpoints.user}
+      stripPrefix: false
+    admin:
+      path: /admin/**
+      url: ${hlp.endpoints.user}
+      stripPrefix: false
+    enterprise-user:
+      path: /enterprise-user/**
+      url: ${hlp.endpoints.user}
+      stripPrefix: false
+    enterprise-admin:
+      path: /enterprise-admin/**
+      url: ${hlp.endpoints.user}
+      stripPrefix: false
+    file:
+      path: /file/**
+      url: ${hlp.endpoints.user}
+      stripPrefix: false
+    login:
+      path: /login/**
+      url: ${hlp.endpoints.user}
+      stripPrefix: false
+    token:
+      path: /token/**
+      url: ${hlp.endpoints.user}
+      stripPrefix: false
+    captcha:
+      path: /captcha/**
+      url: ${hlp.endpoints.user}
+      stripPrefix: false
+    contacts:
+      path: /contacts/**
+      url: ${hlp.endpoints.user}
+      stripPrefix: false
+    swagger_user:
+      path: /doc/user/**
+      url: ${hlp.endpoints.user}
+      stripPrefix: true
+    notifications:
+      path: /notifications/**
+      url: ${hlp.endpoints.user}
+      stripPrefix: false
+
+# open apps
+---
+zuul:
+  routes:
+    open-app:
+      path: /open-apps/**
+      url: ${hlp.endpoints.user}
+      stripPrefix: false
+
+
+# orders
+---
+zuul:
+  routes:
+    order:
+      path: /*/orders/**
+      url: ${hlp.endpoints.order}
+      stripPrefix: false
+    common-order:
+      path: /orders/**
+      url: ${hlp.endpoints.order}
+      stripPrefix: false
+    order-payment:
+      path: /order-payment/**
+      url: ${hlp.endpoints.order}
+      stripPrefix: false
+    order-bill:
+      path: /order-bill/**
+      url: ${hlp.endpoints.order}
+      stripPrefix: false
+    biz-api:
+      path: /*-api/**
+      url: ${hlp.endpoints.order}
+      stripPrefix: false
+    swagger_order:
+      path: /doc/order/**
+      url: ${hlp.endpoints.order}
+      stripPrefix: true
+    order-operation:
+      path: /order-operations/**
+      url: ${hlp.endpoints.order}
+      stripPrefix: false
+
+# payments
+---
+zuul:
+  routes:
+    swagger_payment:
+      path: /doc/payment/**
+      url: ${hlp.endpoints.order}
+      stripPrefix: true
+    payment-transaction:
+      path: /payment-transactions/payment-status/**
+      url: ${hlp.endpoints.order}
+      stripPrefix: false
+
+# mock servers
+---
+zuul:
+  routes:
+    acg-mock-server:
+      path: /acg-mock/**
+      url: ${hlp.endpoints.acg-mock-server}
+      stripPrefix: false

@@ -1,0 +1,36 @@
+@import "../../../../../styles/variables";
+
+.waiting-payment {
+  text-align: center;
+  line-height: 340px;
+
+  .info {
+    font-size: 22px;
+    text-align: center;
+  }
+}
+
+.platform-admin-waiting-payment {
+  background-color: #ffffff;
+  height: 431px;
+
+  .title {
+    font-size: 22px;
+    padding: 40px 0px 0px 40px;
+    color: #000000;
+  }
+
+  p {
+    text-align: center;
+    margin-top: 133px;
+
+    span {
+      color: $content-blue;
+      cursor: pointer;
+    }
+
+    span:hover {
+      text-decoration: underline;
+    }
+  }
+}

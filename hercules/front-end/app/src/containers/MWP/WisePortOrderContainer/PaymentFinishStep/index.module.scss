@@ -1,0 +1,42 @@
+.payment-finish {
+  width: 100%;
+  .main-container {
+    width: 910px;
+    display: inline-block;
+    vertical-align: top;
+  }
+  .main-slide {
+    display: inline-block;
+    margin-left: 20px;
+    .finish-status-108 {
+      height: 108px;
+      padding-top: 34px
+    }
+    .finish-status-217 {
+      height: 217px;
+      padding: 84px 0px;
+    }
+    .finish-status {
+      width: 270px;
+      margin-bottom: 4px;
+      background-color: #ffffff;
+      border-radius: 4px;
+      display: inline-block;
+      text-align: center;
+      color: #a5c615;
+      box-shadow: 0 1px 4px 1px rgba(233, 233, 233, 0.5);
+      .icon {
+        font-size: 44px;
+        vertical-align: middle;
+        margin-right: 13px;
+      }
+      .text {
+        font-size: 22px;
+        vertical-align: middle;
+        font-weight: bold;
+        line-height: 1.09;
+      }
+    }
+  }
+
+}

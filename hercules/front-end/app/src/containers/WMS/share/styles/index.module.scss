@@ -1,0 +1,74 @@
+@import "../../../../../styles/colors";
+
+.row {
+  margin-bottom: 20px;
+  &:after {
+    clear: both;
+  }
+
+  .label {
+    display: inline-block;
+    width: 200px;
+    vertical-align: top;
+    padding-right: 24px;
+    text-align: right;
+    font-size: 16px;
+    line-height: 1.31;
+    color: #686767;
+  }
+
+  .text {
+    display: inline-block;
+    width: 629px;
+    vertical-align: top;
+    line-height: 1.5;
+    color: $font-light-gray;
+    text-align: justify;
+  }
+
+  .cancel-button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: $content-blue;
+    padding-right: 10px;
+    position: absolute;
+    right: 0;
+    top: 3px;
+    background-color: transparent;
+  }
+}
+
+.table-like {
+  display: table;
+
+  .row {
+    display: table-row;
+    .cell {
+      display: table-cell;
+      line-height: 1.5;
+      text-align: left;
+      color: $font-light-gray;
+
+      &:nth-child(1) {
+        width: 120px;
+        text-align: right;
+        .person-icon {
+          display: inline-block;
+          vertical-align: middle;
+          width: 26px;
+          height: 18px;
+          background-image: url("../images/person.svg");
+          background-repeat: no-repeat;
+        }
+      }
+      &:nth-child(2) {
+        width: 70px;
+      }
+      &:nth-child(3) {
+        width: 345px;
+        word-wrap: break-word;
+      }
+    }
+  }
+}

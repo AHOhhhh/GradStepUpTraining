@@ -1,0 +1,23 @@
+{
+  "chargingRules": [
+    {
+      "quantityFrom": 0,
+      "quantityTo": 100,
+      "unitPrice": 0.28
+    },
+    {
+      "quantityFrom": 100,
+      "quantityTo": null,
+      "unitPrice": 0.15
+    }
+  ],
+  "currency": "CNY",
+  "minPrice": 10,
+  "maxPrice": 100,
+  "approvedPrice": 1234,
+  "effectiveFrom": "2017-11-11",
+  "effectiveTo": "2018-11-11",
+  "serviceIntro": "service introduction",
+  "status": "Audited",
+  "enterpriseShortName":"Thoughtworks"
+}

@@ -1,0 +1,91 @@
+.search-container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.order-search {
+  background-color: #ffffff;
+  height: 814px;
+  border-radius: 4px;
+  padding: 30px 40px;
+  margin-top: 56px;
+  .title {
+    font-size: 22px;
+    color: #000000;
+  }
+
+  .search-box {
+    width: 830px;
+    margin: 48px auto;
+    input {
+      &:hover {
+        border: 1px solid #4f4fdf;
+      }
+      border-radius: 4px;
+    }
+    .order {
+      width: 430px;
+    }
+    button {
+      font-size: 16px;
+      width: 150px;
+      height: 40px;
+      border-radius: 4px;
+      background-color: #4f4fdf;
+    }
+    .search-item {
+      display: inline-block;
+      vertical-align: top;
+      position: relative;
+    }
+    .captcha-box {
+      width: 212px;
+      margin: 0 16px;
+      input, img {
+        width: 98px;
+        display: inline-block;
+        vertical-align: top;
+        margin: 0 4px;
+      }
+      img {
+        height: 40px;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.invalid {
+  p {
+    color: #1D16C8;
+    font-size: 12px;
+    position: absolute;
+    top: 40px;
+    left: 2px;
+    margin-top: 5px;
+  }
+  input {
+    border: 1px solid #4f4fdf;
+  }
+}
+
+.logistic-wrapper {
+  margin: 32px 0 0 -20px;
+  max-height: 500px;
+  overflow-y: scroll;
+}
+
+
+.tab-panes :global {
+  .ant-tabs-nav {
+    .ant-tabs-ink-bar {
+      color: #4f4fdf;
+    }
+    .ant-tabs-tab-active {
+      color: #4f4fdf;
+    }
+  }
+}
+
+
+

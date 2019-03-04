@@ -1,0 +1,53 @@
+@import "../../../../../styles/variables";
+
+.position-confirmation :global {
+  position: relative;
+  height: 431px;
+  width: 100%;
+  background: #ffffff;
+  margin-bottom: 40px;
+  h2 {
+    text-align: center;
+    padding-top: 168px;
+    margin-bottom: 48px;
+    color: #000000;
+  }
+  span {
+    color: $content-blue;
+    cursor: pointer;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  .status {
+    margin-top: 133px;
+  }
+
+  .refresh-button {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .title {
+    font-size: 22px;
+    padding: 40px 0px 0px 40px;
+    color: #000000;
+  }
+
+  .create-button {
+    text-align: center;
+    background: $navigation-background-color;
+    color: #ffffff;
+    box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.12);
+    width: 140px;
+    height: 40px;
+    border-radius: 5px;
+    margin: auto;
+    display: block;
+    font-size: 18px;
+    line-height: 2;
+  }
+}

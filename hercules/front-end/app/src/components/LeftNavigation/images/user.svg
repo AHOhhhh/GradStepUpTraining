@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>个人资料1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="企业用户界面ICON" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-227.000000, -398.000000)">
+        <g id="profile" transform="translate(229.000000, 400.000000)">
+            <path d="M2.86911574,14.9 C4.43668171,16.5548043 6.61238524,17.5 9,17.5 C11.3383163,17.5 13.5374591,16.5368418 15.1179195,14.9 L2.86911574,14.9 Z" id="Oval-19" stroke="#000000"></path>
+            <path d="M2.86911574,11.3 C4.43668171,12.9548043 6.61238524,13.9 9,13.9 C11.3383163,13.9 13.5374591,12.9368418 15.1179195,11.3 L2.86911574,11.3 Z" id="Oval-19-Copy" stroke="#000000" transform="translate(9.000000, 12.600000) scale(1, -1) translate(-9.000000, -12.600000) "></path>
+            <path d="M9,10.8 C10.4911688,10.8 11.7,9.59116882 11.7,8.1 C11.7,6.60883118 10.4911688,5.4 9,5.4 C7.50883118,5.4 6.3,6.60883118 6.3,8.1 C6.3,9.59116882 7.50883118,10.8 9,10.8 Z" id="Oval-47" stroke="#000000"></path>
+            <path d="M17.5720249,11.7502727 C17.8499436,10.8833587 18,9.95920312 18,9 C18,4.02943725 13.9705627,0 9,0 C4.02943725,0 0,4.02943725 0,9 C0,9.93780421 0.143435825,10.8421072 0.409565935,11.6921674" id="Oval" stroke="#6A6A6A" stroke-linecap="round"></path>
+        </g>
+    </g>
+</svg>

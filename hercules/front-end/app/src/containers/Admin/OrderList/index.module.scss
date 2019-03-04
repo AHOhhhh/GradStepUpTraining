@@ -1,0 +1,158 @@
+@import "../../../../styles/variables";
+
+$container-padding: 20px;
+
+.admin-orders :global {
+  margin-top: 30px;
+  margin-bottom: 78px;
+
+  .hide {
+    display: none;
+  }
+
+  .label {
+    float: right;
+    margin-top: 20px;
+  }
+
+  .tag {
+    color: $light-blue;
+    padding: 2px 10px;
+    border-radius: 4px;
+    border: 1px solid $light-blue;
+    margin: 0 2px;
+    white-space: nowrap;
+  }
+
+  .red-button {
+    background: #4f4fdf;
+    color: #ffffff;
+    padding: 5px 10px;
+    box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.12);
+
+    width: 66px;
+    height: 27px;
+    border-radius: 5px;
+  }
+
+  .left-margin {
+    margin-left: 10px;
+  }
+
+  .left-small-margin{
+    margin-left: 4px;
+  }
+
+  .card-container {
+    border-radius: 5px;
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+    background: $content-background-color;
+    h2 {
+      padding: 30px 25px;
+      font-weight: 700;
+      font-size: 18px;
+    }
+
+    .ant-table-thead > tr, .ant-table-tbody > tr {
+      th:first-child {
+        padding-left: $container-padding;
+      }
+      th:last-child {
+        padding-right: $container-padding;
+      }
+      td:first-child {
+        padding-left: $container-padding;
+      }
+      td:last-child {
+        padding-right: $container-padding;
+      }
+    }
+
+    table {
+      tr {
+        td {
+          max-width: 170px;
+          padding: 24px 8px;
+        }
+      }
+      th:last-child {
+        width: 120px;
+      }
+
+      .operation {
+        white-space: nowrap;
+        width: 200px;
+      }
+    }
+
+    .ant-tabs.ant-tabs-top.ant-tabs-card.ant-tabs-no-animation {
+      height: fit-content;
+    }
+    .ant-pagination.ant-table-pagination {
+      text-align: center;
+      float: none;
+      margin: 30px 0;
+    }
+
+    .ant-table-wrapper {
+      .ant-table-thead > tr > th, .ant-table-tbody > tr > td {
+        min-width: 77px;
+        &:last-child {
+          min-width: 108px;
+        }
+        &:first-child {
+          span {
+            a {
+              margin-left: 0;
+            }
+          }
+        }
+
+        &:nth-child(4) {
+          word-break: break-word;
+          min-width: 90px;
+        }
+        .ant-table-row-expand-icon {
+          border: none;
+          background-color: transparent;
+        }
+        .ant-table-row-collapsed:after {
+          content: "\E61D";
+          vertical-align: middle;
+          font-family: "anticon";
+        }
+        .ant-table-row-expanded:after {
+          content: "\E61E";
+          vertical-align: middle;
+          font-family: "anticon";
+        }
+      }
+    }
+
+    .ant-tabs-card {
+      .ant-tabs-content {
+        margin-top: -16px;
+        .ant-tabs-tabpane {
+          background: $content-background-color;
+          padding: 16px 20px;
+        }
+      }
+      .ant-tabs-bar {
+        .ant-tabs-tab {
+          border-color: transparent;
+          background: transparent;
+        }
+        .ant-tabs-tab-active {
+          border-bottom: 3px solid $link-hover-color;
+          padding-bottom: 1px;
+        }
+        .ant-tabs-nav-container {
+          padding-left: 20px;
+        }
+      }
+    }
+  }
+}
+

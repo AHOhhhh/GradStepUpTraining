@@ -1,0 +1,23 @@
+version: "3"
+
+networks:
+  service:
+
+services:
+  @@SERVICE@@:
+    image: nexus-release.hercules.fun/hercules/@@SERVICE@@:@@VERSION@@
+    deploy:
+      placement:
+        constraints:
+          - node.role == worker
+      replicas: 1
+      restart_policy:
+        delay: 10s
+    networks:
+      service:
+        aliases:
+          - @@SERVICE@@
+    ports:
+      - "8080:8080"
+    environment:
+      - SPRING_PROFILES_ACTIVE=prod

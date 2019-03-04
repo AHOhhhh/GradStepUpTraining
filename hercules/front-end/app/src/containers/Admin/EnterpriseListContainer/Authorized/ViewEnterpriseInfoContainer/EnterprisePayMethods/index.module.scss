@@ -1,0 +1,28 @@
+.pay-methods :global {
+  margin: 30px 45px 0 45px;
+
+  .order-type {
+    width: 10%;
+    display: inline-block;
+  }
+
+  .pay-methods-checkboxes {
+    display: inline-block;
+  }
+
+  .ant-checkbox-group-item.ant-checkbox-wrapper {
+    margin-right: 55px;
+  }
+
+  .order-checkbox {
+    height: 30px;
+  }
+
+  .save-pay-methods {
+    text-align: center;
+  }
+
+  button.button.primary {
+    margin-top: 40px;
+  }
+}

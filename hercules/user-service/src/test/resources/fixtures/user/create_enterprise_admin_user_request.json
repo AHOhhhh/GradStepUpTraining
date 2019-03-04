@@ -1,0 +1,10 @@
+{
+  "username": "testadmin",
+  "fullname": "Administrator",
+  "email": "admin@thoughtworks.com",
+  "cellphone": "1234567",
+  "telephone": "7654321",
+  "password": "letmein123!",
+  "resettable": false,
+  "role": "EnterpriseAdmin"
+}

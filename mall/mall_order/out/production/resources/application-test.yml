@@ -1,0 +1,19 @@
+profiles: test
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1/mall_micro_service_order_test?characterEncoding=utf-8
+    username: root
+    password: root
+  jpa:
+    show-sql: true
+    database: mysql
+server:
+  port: 9999
+
+management:
+  endpoint:
+    health:
+      enabled: true
+      show-details: always
+    info:
+      enabled: true

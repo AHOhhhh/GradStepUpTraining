@@ -1,0 +1,138 @@
+@import "../../../../styles/variables";
+
+.enterprise-signup {
+  $input-height: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-family: $font-family;
+  margin: 22px 0;
+
+  .error-message {
+    display: block;
+    color: #FF0000;
+  }
+
+  .step-box {
+    background-color: $content-background-color;
+    height: 143px;
+    padding: 40px 180px;
+  }
+
+  .form-box {
+    background-color: $content-background-color;
+    margin-top: 10px;
+    padding: 25px 20px;
+
+    .box-title {
+      font-size: 18px;
+      font-weight: bold;
+      text-align: left;
+    }
+
+    hr {
+      border: none;
+      border-top: solid 3px #f1f0f7;
+      margin: 8px 0 49px 0;
+    }
+
+    .divider-thin {
+      border-top: solid 1px #f1f0f7;
+      margin: 8px 0 30px 0;
+    }
+
+    .row {
+      text-align: left;
+      padding-left: 169px;
+
+      .title {
+        display: inline-block;
+        width: 163px;
+        font-size: 16px;
+        line-height: $input-height;
+        text-align: right;
+        margin-right: 10px;
+      }
+
+      input {
+        width: 330px;
+      }
+    }
+
+    .inline-box {
+      position: relative;
+      width: 330px;
+      display: inline-block;
+      vertical-align: top;
+      .row {
+        padding-left: 0;
+        text-align: right;
+
+        &.no-margin {
+          margin-bottom: 0;
+        }
+      }
+
+      .title {
+        width: 70px;
+        line-height: $input-height;
+        text-align: left;
+        color: #959495;
+      }
+
+      input {
+        width: 246px;
+      }
+
+      .describe {
+        position: absolute;
+        line-height: 1.21;
+        text-align: left;
+        color: #959495;
+        top: 12px;
+        right: -206px;
+        width: 200px;
+      }
+    }
+
+    .operate {
+      margin-top: 16px;
+      margin-left: 340px;
+      text-align: left;
+
+      .button {
+        margin-right: 17px;
+      }
+    }
+    .add-image-icon {
+      cursor: pointer;
+      font-size: 16px;
+
+      &:before {
+        padding-right: 5px;
+        padding-left: 10px;
+        font-size: 16px;
+        display: inline;
+        vertical-align: middle;
+        content: '\E625';
+        color: #f9a300;
+      }
+    }
+
+    .close-uploader-icon:before {
+      cursor: pointer;
+      content: "\E62E";
+      font-size: 20px;
+      color: #1D16C8;
+      margin-top: 90px;
+      text-align: right;
+      display: inline-block;
+      vertical-align: top;
+      margin-left: 10px;
+    }
+
+    .section-title {
+      float: left;
+      font-size: 18px;
+    }
+  }
+}

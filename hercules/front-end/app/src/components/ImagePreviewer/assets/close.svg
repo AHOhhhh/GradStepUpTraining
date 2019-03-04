@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="26px" height="26px" viewBox="0 0 33 33" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(-1.000000, -1.000000)" fill="#FFFFFF">
+            <rect id="Rectangle" transform="translate(17.500000, 17.500000) rotate(-45.000000) translate(-17.500000, -17.500000) " x="16" y="-5" width="3" height="45" rx="1.5"></rect>
+            <rect id="Rectangle" transform="translate(17.500000, 17.500000) rotate(45.000000) translate(-17.500000, -17.500000) " x="16" y="-5" width="3" height="45" rx="1.5"></rect>
+        </g>
+    </g>
+</svg>

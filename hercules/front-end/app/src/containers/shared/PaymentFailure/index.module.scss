@@ -1,0 +1,25 @@
+.payment-failure{
+  width: 300px;
+  margin: 80px auto;
+  .image{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .message{
+    margin-top:16px;
+    font-size: 20px;
+    line-height: 1.5;
+    text-align: left;
+    color: rgb(104, 103, 103);
+  }
+  .operation{
+    margin-top: 32px;
+    .return-order-button{
+      margin-right: 16px;
+    }
+    :global .button{
+      width: 140px;
+    }
+  }
+}

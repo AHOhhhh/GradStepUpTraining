@@ -1,0 +1,69 @@
+@import "../../../../../../styles/variables";
+
+.acg-order-detail {
+  display: table;
+  padding: 10px 0;
+  width: 100%;
+
+  .refer-icon {
+    position: absolute;
+    left: 30px;
+    bottom: -$icon-size / 2;
+    width: $icon-size;
+    height: $icon-size;
+    background: transparent url("../../../../shared/assets/reference-icon.svg") no-repeat;
+    background-size: cover;
+    z-index: 2;
+  }
+
+  .sender-info {
+    display: table-cell;
+    min-width: 200px;
+    max-width: 200px;
+    vertical-align: top;
+  }
+  .receiver-info {
+    display: table-cell;
+    min-width: 200px;
+    max-width: 200px;
+    vertical-align: top;
+  }
+  .basis-info {
+    background-color: transparent;
+    display: table-cell;
+    min-width: 180px;
+    vertical-align: top;
+  }
+  .block {
+    display: table-cell;
+    min-width: 220px;
+    vertical-align: top;
+  }
+
+  .labeled-text {
+    margin: 6px 8px 6px 0;
+
+    .short-label {
+      color: #b2b2b2;
+      width: 48px;
+      word-break: keep-all;
+      display: inline-block;
+      vertical-align: top;
+    }
+
+    .long-label {
+      color: #b2b2b2;
+      width: 62px;
+      display: inline-block;
+      word-break: keep-all;
+      vertical-align: top;
+    }
+
+    .secondary {
+      vertical-align: top;
+      display: inline-block;
+      max-width: calc(100% - 62px);
+      color: #000000;
+    }
+  }
+}

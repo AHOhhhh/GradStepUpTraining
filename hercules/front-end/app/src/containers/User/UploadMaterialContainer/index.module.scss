@@ -1,0 +1,13 @@
+@import "../../../../styles/variables";
+
+.mock-container {
+  width: 800px;
+  height: 500px;
+  margin: 0 auto;
+  text-align: right;
+
+  h1 {
+    font-size: 48px;
+    margin: 10px 0;
+  }
+}

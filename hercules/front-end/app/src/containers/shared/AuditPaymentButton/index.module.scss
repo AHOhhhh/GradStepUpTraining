@@ -1,0 +1,26 @@
+.auditPayment :global {
+  height: 168px;
+  background: white;
+  text-align: center;
+  padding-top: 40px;
+  margin-bottom: 4px;
+  border-radius: 4px;
+
+  .audit-payment-button {
+    width: 180px;
+    height: 54px;
+    font-size: 18px;
+  }
+
+  .desc {
+    margin-top: 16px;
+    font-size: 12px;
+    color: #646464;
+
+    .icon {
+      margin-right: 5px;
+      color: #f19707;
+    }
+  }
+
+}

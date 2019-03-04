@@ -1,0 +1,15 @@
+.operation{
+  width: 230px;
+  margin: 64px auto;
+}
+.button {
+  width: 106px;
+  margin-right: 15px;
+}
+
+:global .button {
+  width: 1000px;
+}
+
+
+

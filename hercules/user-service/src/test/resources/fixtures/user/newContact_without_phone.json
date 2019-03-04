@@ -1,0 +1,13 @@
+{
+    "name": "小明",
+    "address": "北京市东城区景山前街4号故宫太和殿",
+    "country": "中国大陆",
+    "countryAbbr": "CHN",
+    "province": "陕西省",
+    "provinceId": "61",
+    "city": "西安市",
+    "cityId": "01",
+    "district": "雁塔区",
+    "districtId": "13",
+    "enterpriseId": "qwertyuiop1234567890"
+}

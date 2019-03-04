@@ -1,0 +1,19 @@
+@import "../../../../../../styles/variables";
+
+.offer-info {
+  margin-top: 20px;
+
+  :global {
+    .ant-table-thead > tr > th {
+      padding: 10px 8px;
+      background-color: #fff;
+      color: $font-light-gray;
+    }
+
+    .ant-table-tbody > tr > td {
+      font-size: 14px;
+      color: $dark-gray;
+      border-bottom: none;
+    }
+  }
+}

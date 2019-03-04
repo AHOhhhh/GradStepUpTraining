@@ -1,0 +1,29 @@
+@import "../../../../../../styles/colors";
+
+.loading-container {
+  background: white;
+  padding: 150px 0px;
+  border-radius: 5px;
+  text-align: center;
+
+  .hints {
+    font-size: 22px;
+    p {
+      margin-bottom: 20px;
+      font-weight: bold;
+    }
+  }
+
+  .operation {
+    margin-top: 50px;
+
+    .refresh-button {
+      color: $content-blue;
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

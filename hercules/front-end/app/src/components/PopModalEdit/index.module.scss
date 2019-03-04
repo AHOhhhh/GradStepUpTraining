@@ -1,0 +1,67 @@
+.modalList :global {
+  padding-top: 40px;
+  position: relative;
+
+  .notice {
+    position: absolute;
+    top: 0;
+    left: 10px;
+
+    b {
+      color: #4f4fdf;
+    }
+  }
+
+  $input-height: 40px;
+
+  .ant-table-content {
+    line-height: 20px;
+  }
+
+  .ant-table-tbody>tr>td, .ant-table-thead>tr>th {
+    padding: 0;
+    height: 40px;
+  }
+
+  .ant-table-wrapper {
+    height: 420px;
+    overflow: auto;
+  }
+
+  .input-wrapper {
+    line-height: 20px;
+  }
+
+  .ant-form-item-label {
+    line-height: $input-height;
+  }
+
+  .ant-form-explain {
+    float: left;
+  }
+
+  .ant-input.textarea {
+    height: 100px;
+  }
+
+  .ant-select-lg {
+
+    .ant-select-selection--single {
+      height: $input-height;
+    }
+
+    .ant-select-selection__rendered {
+      line-height: $input-height;
+    }
+  }
+
+  .textarea {
+    .has-feedback::after {
+      line-height: 100px;
+    }
+  }
+
+  .has-feedback::after {
+    line-height: $input-height;
+  }
+}

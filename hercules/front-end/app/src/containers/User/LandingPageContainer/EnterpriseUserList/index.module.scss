@@ -1,0 +1,18 @@
+@import "../../../../../styles/colors";
+
+.user-list-container {
+  padding: 20px 20px 50px 20px;
+
+  .add-user {
+    text-align: left;
+    display: inline-block;
+    cursor: pointer;
+
+    &:before {
+      content: "\E645";
+      display: inline-block;
+      margin-right: 5px;
+    }
+  }
+}
+

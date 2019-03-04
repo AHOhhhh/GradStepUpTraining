@@ -1,0 +1,26 @@
+@import "variables";
+
+.ant-select-lg {
+
+  .ant-select-selection {
+    border-radius: 0;
+  }
+}
+
+.ant-select-selection--single {
+  &:focus {
+    border-color: $meta-title-color;
+    box-shadow: 0 0 0 2px rgba(249, 163, 0, .2);
+  }
+  &:hover {
+    border-color: $meta-title-color;
+  }
+}
+
+.ant-select-selection {
+  border-radius: 0;
+}
+
+.ant-select-selection--single .ant-select-selection__rendered {
+  border-radius: 0;
+}

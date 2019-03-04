@@ -1,0 +1,60 @@
+@import "../../../../../styles/colors";
+
+$light-red: #4f4fdf;
+
+.step-in-service {
+  .main-section {
+    margin-right: 20px;
+    display: inline-block;
+    vertical-align: top;
+    width: 910px;
+  }
+  .provider-name {
+    margin-bottom: 10px;
+    font-size: 22px;
+    .price-detail-toogle {
+      display: inline-block;
+      margin-left: 20px;
+      cursor: pointer;
+      color: $light-red;
+
+      &:hover {
+        font-weight: bold;
+      }
+    }
+  }
+
+  .refresh-operation {
+    margin-top: 50px;
+    text-align: center;
+
+    .refresh-button {
+      color: $content-blue;
+      cursor: pointer;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .right-side-bar {
+    margin-bottom: 30px;
+    display: inline-block;
+    width: 270px;
+  }
+}
+
+.step-in-service :global {
+  .ant-card {
+    margin-bottom: 20px;
+  }
+
+  .ant-card-body {
+    padding: 30px 40px;
+  }
+}
+
+.sso-button{
+  float: right;
+  display: inline-block;
+}

@@ -1,0 +1,61 @@
+buildscript {
+    ext {
+        springBootVersion = '1.5.8.RELEASE'
+        springCloudVersion = 'Dalston.SR4'
+        artifactRepoBase = "http://nexus.hercules.fun/repository"
+        mavenPublic = "${artifactRepoBase}/maven-public/"
+    }
+    repositories {
+        maven { url mavenPublic }
+        maven { url "https://plugins.gradle.org/m2/" }
+
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'org.springframework.boot'
+
+compileJava.options.encoding = "UTF-8"
+compileTestJava.options.encoding = "UTF-8"
+
+group = 'fun.hercules.'
+version = '1.0.0'
+if (!project.hasProperty("release")) {
+    version = "${version}-${project.hasProperty("buildVersion") ? project.property("buildVersion") : "SNAPSHOT"}"
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    maven {
+        url mavenPublic
+    }
+}
+
+
+dependencies {
+    compile 'org.springframework.cloud:spring-cloud-starter-feign'
+    compile('org.springframework.boot:spring-boot-starter-web')
+    compile 'org.springframework.boot:spring-boot-starter-thymeleaf'
+    compile 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310'
+    compile 'com.fasterxml.jackson.datatype:jackson-datatype-jdk8'
+    compile group: 'commons-io', name: 'commons-io', version: '2.6'
+    compile('org.projectlombok:lombok')
+    compile('com.google.guava:guava:23.0')
+    compile("io.jsonwebtoken:jjwt:0.9.0")
+    compile group: 'io.springfox', name: 'springfox-swagger-ui', version: '2.9.2'
+    compile group: 'io.springfox', name: 'springfox-swagger2', version: '2.9.2'
+
+    testCompile('org.springframework.boot:spring-boot-starter-test')
+}
+
+dependencyManagement {
+    imports {
+        mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
+    }
+}

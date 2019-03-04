@@ -1,0 +1,74 @@
+@import 'variables';
+.ant-modal {
+  .ant-modal-header {
+    .ant-modal-title {
+      font-size: 20px;
+    }
+  }
+}
+
+.ant-modal-footer {
+  text-align: center;
+  border-top: 0;
+  padding-bottom: 30px;
+
+  .ant-btn-lg {
+    width: 106px;
+  }
+}
+
+// This modal contain only one button without close icon
+.read-only-modal {
+  .ant-modal-body {
+    padding: 40px;
+  }
+
+  .ant-modal-close-x {
+    display: none;
+  }
+  .ant-modal-footer {
+    text-align: center;
+    border-top: none;
+    padding-bottom: 30px;
+  }
+}
+
+.offline-payment-modal {
+  .ant-modal-content {
+    .ant-modal-body {
+      height: 206px;
+      .content {
+        margin-top: 45px;
+        margin-bottom: 40px;
+        font-size: 20px;
+        line-height: 1.5;
+        text-align: center;
+        color: rgb(0, 0, 0);
+      }
+      .button {
+        width: 106px;
+        height: 40px;
+        font-size: 18px;
+        line-height: 1.5;
+        text-align: center;
+      }
+    }
+
+    .ant-modal-close {
+      padding-top: 3px;
+      .ant-modal-close-x {
+        color: $font-black;
+      }
+    }
+    .ant-modal-header {
+      padding: 13px 25px;
+      .ant-modal-title {
+        color: $font-black;
+        font-size: 20px;
+        line-height: 1.5;
+        letter-spacing: 0.6px;
+        text-align: left;
+      }
+    }
+  }
+}

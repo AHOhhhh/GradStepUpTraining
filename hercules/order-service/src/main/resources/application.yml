@@ -1,0 +1,143 @@
+hlp:
+  services:
+    webapi-gateway:
+      host: webapi-gateway
+      port: 8080
+    user-service:
+      host: user-service
+      port: 8001
+    order-service:
+      host: order-service
+      port: 8002
+    config-server:
+      host: config-server
+      port: 8099
+    acg-mock-server:
+      host: acg-mock-server
+      port: 30000
+
+  endpoints:
+    user: http://${hlp.services.user-service.host}:${hlp.services.user-service.port}
+    order: http://${hlp.services.order-service.host}:${hlp.services.order-service.port}
+    config-server: http://${hlp.services.config-server.host}:${hlp.services.config-server.port}
+    acg-mock-server: http://${hlp.services.acg-mock-server.host}:${hlp.services.acg-mock-server.port}
+
+
+  platform:
+    service-user:
+      id: 708ccc12-bd0c-3ba2-8754-c3e39a5dd62a
+      name: platform0service
+      role: PlatformService
+    time-zone: Asia/Shanghai
+  authorization:
+    jwt:
+      secret: HerculesSecretKeyToGenJWTs
+      expires: 14400
+
+user-service:
+  ribbon:
+    listOfServers: ${hlp.services.user-service.host}:${hlp.services.user-service.port}
+
+order-service:
+  ribbon:
+    listOfServers: ${hlp.services.order-service.host}:${hlp.services.order-service.port}
+
+spring:
+  application:
+    name: order-service
+
+
+  jpa:
+    generate-ddl: false
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        enable_lazy_load_no_trans: true
+        id:
+          new_generator_mappings: false
+
+  flyway:
+    enabled: true
+    out-of-order: true
+    encoding: UTF-8
+
+  datasource:
+    url: jdbc:mysql://mysql:3306/order
+    username: root
+    password: password
+    driver-class-name: com.mysql.jdbc.Driver
+
+  active-profile: ${spring.profiles.active:default}
+
+  servlet:
+      multipart:
+        max-file-size: 4MB
+        max-request-size: 4MB
+
+
+
+server:
+  port: ${hlp.services.${spring.application.name}.port}
+
+management:
+  server:
+    servlet:
+      context-path: /system
+  endpoints:
+    web:
+      base-path: /
+
+feign:
+  hystrix:
+    enabled: true
+---
+# Order Config
+order:
+  id-conflicts:
+    retry: 3
+  render:
+    platform-service:
+      enabled: false
+  json:
+    ignore-null-field:
+      enabled: false
+
+hlp:
+  business-services:
+    acg:
+      integration:
+        url: ${hlp.endpoints.acg-mock-server}
+        enabled: true
+        fail-fast: false
+
+importation:
+  order-bill:
+    max-lines: 10000
+
+
+paymentAccount:
+  offline:
+    - orderType: WMS
+      depositBank: 北京银行
+      collectionAccountName: WMS
+      payChannel: WMS
+      collectionAccountNumber: 1129438947318647831
+    - orderType: MWP
+      depositBank: 中国银行
+      collectionAccountName: 4.0平台
+      payChannel: LOGISTICS
+      collectionAccountNumber: 1129438947318647831
+    - orderType: ACG
+      depositBank: 招商银行
+      collectionAccountName: 4.0平台
+      payChannel: LOGISTICS
+      collectionAccountNumber: 1129438947318647831
+  online:
+    - orderType: WMS
+      payChannel: LOGISTICS
+    - orderType: MWP
+      payChannel: LOGISTICS
+    - orderType: ACG
+      payChannel: LOGISTICS
+

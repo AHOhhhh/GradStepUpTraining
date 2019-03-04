@@ -1,0 +1,126 @@
+@import "../../../../styles/colors";
+
+.enterprise-container {
+  background-color: #ffffff;
+  border-radius: 5px;
+
+  h2 {
+    padding: 30px;
+    font-weight: 700;
+    font-size: 18px;
+  }
+}
+
+.enterprise {
+  .breadcrumb-layout {
+    margin-left: 44px;
+  }
+
+  .enterprise-info {
+    margin-bottom: 150px;
+    .title {
+      font-size: 22px;
+      line-height: 1;
+      text-align: left;
+      margin: 30px 0 20px 44px;
+    }
+
+    .enterprise-content {
+      width: 100%;
+      border-radius: 5px;
+      background-color: $content-background-color;
+      padding: 20px 20px;
+
+      .relative {
+        position: relative;
+      }
+
+      .verify-state {
+        display: inline-block;
+        margin-left: 23px;
+        .label {
+          line-height: 1;
+          text-align: left;
+          display: inline-block;
+        }
+
+        .comment {
+          margin-top: 15px;
+
+          .comment-text {
+            display: inline-block;
+          }
+        }
+
+        .state {
+          width: 85px;
+          height: 22px;
+          border-radius: 4px;
+          display: inline-block;
+          line-height: 22px;
+
+          .diamond {
+            display: inline-block;
+            background-image: url("./images/diamond.svg");
+            background-repeat: no-repeat;
+
+            width: 15px;
+            height: 13px;
+            color: $content-background-color;
+            vertical-align: middle;
+            margin: 0 8px 0 8px;
+          }
+
+          .text {
+            font-size: 12px;
+            line-height: 1.67;
+            text-align: center;
+            color: $content-background-color;
+          }
+        }
+
+        .reupload {
+          display: inline-block;
+          font-size: 12px;
+          line-height: 1.67;
+          text-align: center;
+          color: #f9a300;
+          margin-left: 10px;
+          cursor: pointer;
+        }
+
+        .non-verified {
+          background-color: #bdbfbd;
+        }
+
+        .under-verified {
+          background-color: #f9a300;
+        }
+
+        .verified-succeed {
+          background-color: #0bc406;
+        }
+
+        .verified-failed {
+          background-color: $button-default-hover-color;
+        }
+      }
+
+      .submit-time {
+        margin-right: 3px;
+        line-height: 1;
+        position: absolute;
+        bottom: 2px;
+        right: 0;
+      }
+
+      .enterprise-qualification-container {
+        padding: 14px 12px;
+        border-radius: 5px;
+        background-color: #ffffff;
+        border: solid 1px rgba(219,217,219,0.99);
+        margin-top: 15px;
+      }
+    }
+  }
+}

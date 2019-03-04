@@ -1,0 +1,43 @@
+@import "../../../../styles/variables";
+
+.enterprise-detail-container{
+  margin-bottom: 50px;
+  .breadcrumb-layout {
+    margin-left: 40px;
+  }
+
+  .page-title {
+    margin: 40px 0px 20px 40px;
+    font-size: 22px;
+  }
+
+  .card-title {
+    margin: 0;
+    padding: 0px 0px 20px 10px;
+    font-size: 18px;
+  }
+
+  .page-content-wrapper {
+    .enterprise-content {
+      padding: 25px 30px;
+      background-color: #ffffff;
+    }
+  }
+
+
+  .accont-basic-info-wrapper,
+  .enterprise-qulification-info-wrapper {
+    margin-bottom: 20px;
+  }
+
+  .operate {
+    margin-top: 17px;
+    text-align: center;
+    padding: 20px 0px;
+    border-top: 2px solid $light-gray;
+
+    button {
+      margin: 0px 10px;
+    }
+  }
+}

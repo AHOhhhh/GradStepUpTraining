@@ -1,0 +1,76 @@
+.operation-document {
+  margin-top: 40px;
+  margin-bottom: 30px;
+  padding: 32px 40px 34px 40px;
+  background-color: #fbfbfb;
+  box-shadow: 0 1px 4px 1px rgba(233, 233, 233, 0.5);
+  .operation-title {
+    font-size: 20px;
+    font-weight: bold;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.5)
+  }
+  .time-line :global {
+    width: 540px;
+    margin-top: 34px;
+    margin-right: auto;
+    margin-left: auto;
+
+    .ant-timeline {
+      .ant-timeline-item {
+        .ant-timeline-item-tail {
+          width: 1px;
+          border: solid 1px rgb(233, 233, 233);
+        }
+        .ant-timeline-item-head-white {
+          width: 14px;
+          height: 14px;
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          border: solid 2px rgb(255, 255, 255);
+          &.ant-timeline-item-head {
+            background-color: rgb(223, 79, 79);
+          }
+        }
+        .ant-timeline-item-head {
+          background-color: rgb(161, 161, 161);
+        }
+        .ant-timeline-item-head-blue {
+          border: solid 2px rgb(161, 161, 161);
+        }
+        .ant-timeline-item-content {
+          text-align: left;
+          color: rgb(0, 0, 0);
+        }
+      }
+    }
+  }
+}
+
+.current-content {
+  vertical-align: middle;
+  display: inline-block;
+  margin-left: 20px;
+  line-height: 1.0;
+  text-align: left;
+  color: #686767;
+}
+
+.content {
+  vertical-align: middle;
+  display: inline-block;
+  margin-left: 20px;
+  line-height: 1.0;
+  text-align: left;
+  color: rgba(0, 0, 0, 0.5);
+
+}
+
+.created-time{
+  width: 140px;
+}
+.detail{
+  width: 115px;
+}
+.created-user{
+  width: 200px;
+}

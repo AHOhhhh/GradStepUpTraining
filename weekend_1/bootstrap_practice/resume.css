@@ -1,0 +1,72 @@
+body{
+  background-color: #eee;
+}
+.container{
+  border: 1px solid #000;
+  background-color: #ffffff;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.header .avatar {
+  width: 150px;
+  height: 150px;
+}
+
+.header h1 {
+  text-transform: uppercase;
+  font-size: 2rem;
+}
+
+.box {}
+
+.box h2 {
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+.box h2::before {
+  content: '//'
+}
+
+.box p {
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+}
+
+.education h3 {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.education p {
+  font-size: 1rem;
+  margin: 0;
+  line-height: 1.2rem;
+}
+
+.experiences ul {
+  padding: 1rem;
+}
+
+.experiences h3 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.experiences p {
+  font-size: 1rem;
+  line-height: 1.2rem;
+}
+
+
+.contact ul{
+  list-style: none;
+}
+
+.contact ul li{
+  margin: 5px 0;
+}
+
+.language ul{
+  padding-top: 1rem;
+}

@@ -1,0 +1,221 @@
+{
+  "code": 1,
+  "msg": "成功",
+  "data": {
+    "airfreightDTO": {
+      "airfreightCharge": "10",
+      "minAirfreightCharge": "10",
+      "fuelCharge": "100.00",
+      "id": 12
+    },
+    "airportStart": {
+      "name": "始发港交货",
+      "priceDTOS": [
+        {
+          "productType": 0,
+          "name": "出港服务费",
+          "price": "20.00",
+          "minPrice": "50.00",
+          "priceType": 10,
+          "id": 1
+        },
+        {
+          "productType": 0,
+          "name": "制单代理费",
+          "price": "20.00",
+          "minPrice": "50.00",
+          "priceType": 11,
+          "id": 2
+        }
+      ]
+    },
+    "airportEnd": {
+      "name": "目的港提货",
+      "priceDTOS": [
+        {
+          "productType": 0,
+          "name": "进港提货费",
+          "price": "20.00",
+          "minPrice": "50.00",
+          "priceType": 11,
+          "id": 3
+        }
+      ]
+    },
+    "landStart": {
+      "name": "上门取货",
+      "landCarriageSales": [
+        {
+          "city": "北京市",
+          "cityArea": "朝阳区",
+          "landProductTypeDTOS": [
+            {
+              "productType": 1,
+              "list": [
+                {
+                  "productType": 1,
+                  "name": "1吨金杯车",
+                  "price": "100",
+                  "minPrice": "0.0",
+                  "priceType": 11,
+                  "id": 94
+                },
+                {
+                  "productType": 1,
+                  "name": "2吨厢式货车",
+                  "price": "200",
+                  "minPrice": "0.0",
+                  "priceType": 11,
+                  "id": 95
+                },
+                {
+                  "productType": 1,
+                  "name": "3吨厢式货车",
+                  "price": "300",
+                  "minPrice": "0.0",
+                  "priceType": 11,
+                  "id": 96
+                }
+              ],
+              "id": 7
+            }
+          ]
+        },
+        {
+          "city": "北京市",
+          "cityArea": "卢湾区",
+          "landProductTypeDTOS": []
+        }
+      ]
+    },
+    "landEnd": {
+      "name": "落地送货",
+      "landCarriageSales": [
+        {
+          "city": "深圳市",
+          "cityArea": "宝安区",
+          "landProductTypeDTOS": [
+            {
+              "productType": 2,
+              "list": [
+                {
+                  "productType": 2,
+                  "price": "1",
+                  "minPrice": "100.0",
+                  "priceType": 11,
+                  "id": 181
+                }
+              ],
+              "id": 15
+            },
+            {
+              "productType": 1,
+              "list": [
+                {
+                  "productType": 1,
+                  "name": "1吨金杯车",
+                  "price": "100",
+                  "minPrice": "100.0",
+                  "priceType": 11,
+                  "id": 182
+                },
+                {
+                  "productType": 1,
+                  "name": "2吨厢式货车",
+                  "price": "200",
+                  "minPrice": "100.0",
+                  "priceType": 11,
+                  "id": 183
+                },
+                {
+                  "productType": 1,
+                  "name": "3吨厢式货车",
+                  "price": "300",
+                  "minPrice": "100.0",
+                  "priceType": 11,
+                  "id": 184
+                }
+              ],
+              "id": 6
+            }
+          ]
+        },
+        {
+          "city": "深圳市",
+          "cityArea": "南山区",
+          "landProductTypeDTOS": [
+            {
+              "productType": 1,
+              "list": [
+                {
+                  "productType": 1,
+                  "name": "1吨金杯车",
+                  "price": "100",
+                  "minPrice": "100.0",
+                  "priceType": 11,
+                  "id": 62
+                },
+                {
+                  "productType": 1,
+                  "name": "2吨厢式货车",
+                  "price": "200",
+                  "minPrice": "100.0",
+                  "priceType": 11,
+                  "id": 64
+                },
+                {
+                  "productType": 1,
+                  "name": "3吨厢式货车",
+                  "price": "300",
+                  "minPrice": "100.0",
+                  "priceType": 11,
+                  "id": 66
+                }
+              ],
+              "id": 6
+            }
+          ]
+        },
+        {
+          "city": "深圳市",
+          "cityArea": "福田区",
+          "landProductTypeDTOS": [
+            {
+              "productType": 1,
+              "list": [
+                {
+                  "productType": 1,
+                  "name": "1吨金杯车",
+                  "price": "100",
+                  "minPrice": "100.0",
+                  "priceType": 11,
+                  "id": 85
+                },
+                {
+                  "productType": 1,
+                  "name": "2吨厢式货车",
+                  "price": "200",
+                  "minPrice": "100.0",
+                  "priceType": 11,
+                  "id": 86
+                },
+                {
+                  "productType": 1,
+                  "name": "3吨厢式货车",
+                  "price": "300",
+                  "minPrice": "100.0",
+                  "priceType": 11,
+                  "id": 87
+                }
+              ],
+              "id": 6
+            }
+          ]
+        }
+      ]
+    },
+    "increaseServiceDTOS": [],
+    "flightRecordId": 30,
+    "id": 0
+  }
+}

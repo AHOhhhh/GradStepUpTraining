@@ -1,0 +1,82 @@
+@import "../../../../../styles/variables";
+
+.container {
+  width: 270px;
+  display: inline-block;
+  vertical-align: top;
+  background-color: #ffffff;
+  box-shadow: 0 1px 4px 1px rgba(233, 233, 233, 0.5);
+
+  margin: 0;
+  padding: 24px;
+
+  .secondary {
+    color: #000000;
+    display: inline-block;
+    width: calc(100% - 92px);
+    vertical-align: top;
+    margin-left: 12px;
+  }
+
+  .title {
+    h3 {
+      font-size: 16px;
+      line-height: 1.5;
+      display: inline-block;
+      text-align: right;
+    }
+    span {
+      word-break: break-all;
+      width: 146px;
+      display: inline-block;
+      vertical-align: top;
+    }
+    padding: 16px 0;
+    border-bottom: solid 2px $line-gray;
+    margin-bottom: 12px;
+  }
+
+  .item {
+    padding: 4px 0;
+    justify-content: space-between;
+  }
+
+  .label {
+    color: #686767;
+    width: 72px;
+    text-align: right;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .requirement {
+    border-bottom: 1px dashed $line-gray;
+    padding: 8px 0 20px 0;
+  }
+
+  .description {
+    padding: 20px 0;
+  }
+
+  h5 {
+    color: #686767;
+    padding-bottom: 12px;
+  }
+
+  .contact {
+    padding: 36px 0px 42px 0px;
+  }
+
+  .lineItems {
+    color: #000000;
+
+    .lineItem {
+      padding: 0 0 8px 0;
+    }
+  }
+
+  .contactDetail {
+    color: #000000;
+  }
+
+}

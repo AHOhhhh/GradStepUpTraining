@@ -1,0 +1,140 @@
+buildscript {
+    ext {
+        springBootVersion = '1.5.8.RELEASE'
+        springCloudVersion = 'Dalston.SR4'
+        artifactRepoBase = "http://nexus.hercules.fun/repository"
+        mavenPublic = "${artifactRepoBase}/maven-public/"
+    }
+    repositories {
+        maven { url mavenPublic }
+        maven { url "https://plugins.gradle.org/m2/" }
+
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+        classpath "gradle.plugin.com.boxfuse.client:flyway-release:4.2.0"
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'maven-publish'
+apply plugin: "idea"
+apply plugin: "eclipse"
+apply plugin: 'checkstyle'
+apply plugin: 'pmd'
+apply plugin: 'findbugs'
+apply plugin: "org.flywaydb.flyway"
+apply plugin: "jacoco"
+
+compileJava.options.encoding = "UTF-8"
+compileTestJava.options.encoding = "UTF-8"
+
+group = 'fun.hercules'
+version = '1.0.0'
+if (!project.hasProperty("release")) {
+    version = "${version}-${project.hasProperty("buildVersion") ? project.property("buildVersion") : "SNAPSHOT"}"
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    maven { url mavenPublic }
+    maven { url "http://repo.spring.io/plugins-release/" }
+}
+
+publishing {
+    publications {
+        buildResult(MavenPublication) {
+            from components.java
+        }
+    }
+    repositories {
+        maven {
+            url "${artifactRepoBase}/${project.version.endsWith('-SNAPSHOT') ? 'maven-snapshots' : 'maven-releases'}/"
+            credentials { username 'admin'; password 'admin123' }
+        }
+    }
+}
+
+tasks.withType(FindBugs) {
+    reports {
+        xml.enabled false
+        html.enabled true
+    }
+}
+
+checkstyle {
+    configFile = file("./config/checkstyle/checkstyle.xml")
+    toolVersion = '6.7'
+}
+
+task dev {
+    doLast {
+        bootRun.systemProperty 'spring.profiles.active', 'dev'
+    }
+}
+
+ext['hibernate.version'] = '5.2.4.Final'
+
+configurations {
+    provided.all*.exclude group: 'javax.servlet'
+}
+
+dependencies {
+    compile('org.springframework.boot:spring-boot-starter-data-jpa')
+    compile('org.springframework.boot:spring-boot-starter-web')
+    compile("org.springframework.boot:spring-boot-starter-actuator")
+    compile("org.springframework.boot:spring-boot-starter-security")
+    compile 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310'
+    compile 'com.fasterxml.jackson.datatype:jackson-datatype-jdk8'
+
+    compile('org.flywaydb:flyway-core')
+    compile('com.google.guava:guava:23.0')
+    compile('org.projectlombok:lombok')
+    compile("io.jsonwebtoken:jjwt:0.9.0")
+    runtime('mysql:mysql-connector-java')
+
+    compile 'io.springfox:springfox-swagger2:2.7.0'
+    compile 'io.springfox:springfox-swagger-ui:2.7.0'
+    compile 'org.apache.commons:commons-lang3:3.6'
+    compile 'commons-codec:commons-codec:1.10'
+
+    compile 'com.puppycrawl.tools:checkstyle:8.4'
+    compile 'net.sourceforge.pmd:pmd:5.8.1'
+    compile 'com.google.code.findbugs:findbugs:3.0.1'
+    compile 'com.octo.captcha:jcaptcha:1.0'
+
+    testCompile('org.springframework.boot:spring-boot-starter-test')
+    testCompile('org.springframework.restdocs:spring-restdocs-mockmvc')
+    testCompile 'com.github.springtestdbunit:spring-test-dbunit:1.2.0'
+    testCompile 'io.rest-assured:rest-assured:3.0.5'
+    testCompile 'org.dbunit:dbunit:2.5.4'
+    testCompile('com.h2database:h2')
+}
+
+jacocoTestReport {
+    reports {
+        xml.enabled false
+        csv.enabled false
+        html.destination file("${buildDir}/reports/coverage")
+    }
+}
+
+dependencyManagement {
+    imports {
+        mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
+    }
+}
+
+flyway {
+    url = "jdbc:mysql://127.0.0.1:3306"
+    user = "root"
+    password = "password"
+    schemas = ['user']
+}
+
+tasks.withType(Checkstyle) {
+    exclude '**/db/migration/**'
+}

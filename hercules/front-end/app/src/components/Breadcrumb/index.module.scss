@@ -1,0 +1,20 @@
+.breadcrumb :global {
+  margin-top: 24px;
+  .ant-breadcrumb {
+    //margin-left: 44px;
+    .ant-breadcrumb-link {
+      line-height: 1.57;
+      text-align: left;
+    }
+
+    .ant-breadcrumb-separator {
+      margin-left: 0;
+    }
+
+    .current-page {
+      line-height: 1.57;
+      text-align: left;
+      color: #f9a300;
+    }
+  }
+}

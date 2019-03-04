@@ -1,0 +1,1 @@
+insert into todo_demo.products(name,price,category,brand,description,time,place) values("自行车",300,"交通工具","捷安特","骑得快","2018-08-01","中国")

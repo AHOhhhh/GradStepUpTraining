@@ -1,0 +1,63 @@
+@import "../../../../styles/variables";
+.fundInfo :global {
+  background-color: white;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  border-radius: 4px;
+
+  $container-padding: 40px;
+
+  .title {
+    padding: 30px 40px 16px 40px;
+    a{
+      float: right;
+      font-size: 14px;
+      color:#c0c0c0;
+      &:hover{
+        color: $content-blue;
+        text-decoration:underline;
+      }
+    }
+    h2 {
+      font-size: 24px;
+      line-height: 1.0;
+      text-align: left;
+      color: rgb(0, 0, 0);
+      display: inline-block;
+    }
+  }
+
+  .ant-table-thead > tr, .ant-table-tbody > tr {
+    th:first-child {
+      padding-left: $container-padding;
+    }
+    th:last-child {
+      padding-right: $container-padding;
+    }
+    td:first-child {
+      padding-left: $container-padding;
+    }
+    td:last-child {
+      padding-right: $container-padding;
+    }
+
+    th, td {
+      vertical-align: top;
+    }
+
+    th:nth-child(4), td:nth-child(4) {
+      max-width: 200px;
+    }
+  }
+
+  .ant-table-placeholder {
+    display: block;
+    border-radius: 0 0 4px 4px;
+  }
+
+  .ant-table-tbody tr td {
+    color: rgb(0, 0, 0);
+    text-align: left;
+    border-bottom: none;
+  }
+}

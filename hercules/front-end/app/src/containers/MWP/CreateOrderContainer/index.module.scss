@@ -1,0 +1,75 @@
+@import "../../../../styles/variables";
+
+.create-order {
+  margin: 0 auto;
+  width: 1200px;
+  $tips-height: 78px;
+  padding: 32px;
+
+  .title {
+    font-size: 32px;
+    text-align: left;
+    margin: 32px 0;
+  }
+
+  .select {
+    width: 340px;
+  }
+
+  form {
+    label {
+      line-height: 40px;
+      font-size: 16px;
+      color: #000000;
+      padding-right: 15px;
+    }
+    span {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    input {
+      width: 340px;
+    }
+
+    :global .ant-calendar-picker {
+      width: 340px;
+    }
+  }
+
+  .input {
+    width: 340px;
+  }
+
+  .input-unit {
+    font-size: 16px;
+    margin-left: 10px;
+  }
+
+  .operate {
+    .button {
+      height: 40px;
+      color: $font-light-gray;
+
+      &.primary {
+        color: $content-background-color;
+      }
+    }
+  }
+}
+
+:global {
+  .ant-calendar-input-wrap {
+    height: 45px;
+    padding-left: 12px;
+    line-height: 35px;
+  }
+  .ant-calendar-disabled-cell {
+    .ant-calendar-today {
+      .ant-calendar-date{
+        &:before{
+            left:12px;
+        }
+      }
+    }
+  }
+}

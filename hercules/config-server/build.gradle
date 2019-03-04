@@ -1,0 +1,61 @@
+buildscript {
+    ext {
+        springBootVersion = '1.5.8.RELEASE'
+        springCloudVersion = 'Dalston.SR4'
+        artifactRepoBase = "http://nexus.hercules.fun/repository"
+        mavenPublic = "${artifactRepoBase}/maven-public/"
+    }
+    repositories {
+        maven {
+            url mavenPublic
+        }
+    }
+    dependencies {
+        classpath("org.springframework.boot:spring-boot-gradle-plugin:${springBootVersion}")
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'org.springframework.boot'
+apply plugin: 'maven-publish'
+apply plugin: "idea"
+apply plugin: "eclipse"
+
+group = 'fun.hercules'
+version = '1.0.0'
+if (!project.hasProperty("release")) {
+    version = "${version}-${project.hasProperty("buildVersion") ? project.property("buildVersion") : "SNAPSHOT"}"
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    maven {
+        url mavenPublic
+    }
+}
+
+publishing {
+    publications {
+        buildResult(MavenPublication) {
+            from components.java
+        }
+    }
+    repositories {
+        maven {
+            url "${artifactRepoBase}/${project.version.endsWith('-SNAPSHOT') ? 'maven-snapshots' : 'maven-releases'}/"
+            credentials { username 'admin'; password 'admin123' }
+        }
+    }
+}
+
+dependencies {
+    compile('org.springframework.boot:spring-boot-starter-web')
+}
+
+dependencyManagement {
+    imports {
+        mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
+    }
+}

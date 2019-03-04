@@ -1,0 +1,56 @@
+@import "../../../../../../styles/colors";
+
+.payment-tip {
+  font-size: 12px;
+  line-height: 1.5;
+  text-align: left;
+  color: rgb(100, 100, 100);
+  .icon :global {
+    .anticon {
+      color: rgb(241, 151, 7);
+      font-size: 16px;
+      line-height: 1.12;
+    }
+    margin-right: 5px;
+    display: inline-block;
+    vertical-align: top;
+  }
+  .tip-message {
+    width: 160px;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 1.5;
+    color: rgb(100, 100, 100);
+    a {
+      color: $content-blue;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+h2 {
+  line-height: 2.0;
+  color: rgba(0, 0, 0, 0.5);
+  span {
+    font-size: 25px;
+    line-height: 1.43;
+    color: rgb(223, 79, 79);
+  }
+}
+
+.payment-button :global {
+  margin-top: 38px;
+  margin-bottom: 16px;
+  .button {
+    box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.12);
+    width: 180px;
+    height: 54px;
+    font-size: 18px;
+    background-color: rgb(223, 79, 79);
+    margin: 0 auto;
+  }
+}
+

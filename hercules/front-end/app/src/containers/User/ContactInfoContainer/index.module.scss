@@ -1,0 +1,68 @@
+@import "../../../../styles/variables";
+
+$container-padding: 30px;
+
+.contactContainer :global {
+  background-color: #ffffff;
+  border-radius: 5px;
+
+  h2 {
+    margin-bottom: 8px;
+  }
+
+  .operation {
+    margin-bottom: 24px;
+  }
+
+  .add-contact {
+    cursor: pointer;
+    line-height: 35px;
+    padding-left: 30px;
+    font-size: 12px;
+    display: inline-block;
+  }
+
+  .search-bar {
+    margin-right: $container-padding;
+    float: right;
+  }
+
+  .table-operation {
+    margin-right: 10px;
+  }
+
+  .ant-table-thead > tr, .ant-table-tbody > tr {
+    th:first-child {
+      padding-left: $container-padding;
+    }
+    th:last-child {
+      padding-right: $container-padding;
+    }
+    td:first-child {
+      padding-left: $container-padding;
+    }
+    td:last-child {
+      padding-right: $container-padding;
+    }
+  }
+
+  .ant-table-tbody td:nth-child(2) {
+    max-width: 300px;
+  }
+
+  .ant-pagination.ant-table-pagination {
+    text-align: center;
+    float: none;
+    margin: 30px 0;
+  }
+}
+
+.deleteContactContainer :global{
+  .confirm-text {
+    font-size: 22px;
+    line-height: 1.5;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}

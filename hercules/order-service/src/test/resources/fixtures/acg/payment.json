@@ -1,0 +1,9 @@
+{
+  "payRepeated": false,
+  "amount": 100.2,
+  "status": "PayInProcess",
+  "paidTime": "2017-12-12T05:59:08Z",
+  "currency": "CNY",
+  "payChannel": "LOGISTICS",
+  "payMethod": "ONLINE"
+}

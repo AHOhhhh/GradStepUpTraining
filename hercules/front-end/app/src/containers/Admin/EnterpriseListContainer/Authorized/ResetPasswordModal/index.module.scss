@@ -1,0 +1,28 @@
+@import "../../../../../../styles/colors";
+
+.reset-password {
+
+  .messageInfoBefore {
+    font-size: 16px;
+    font-family: MicrosoftYaHei;
+    margin: 50px 70px;
+    text-align: center;
+  }
+  .buttonGroup {
+    margin: 60px 0px 40px 116px;
+    button {
+      width: 150px;
+      display: inline-block;
+      height: 34.1px;
+      margin-right: 6px;
+    }
+    .submitButton {
+      background-color: $link-hover-color;
+      color: white;
+    }
+    .cancelButton {
+      background-color: #FFFFFF;
+      color: $link-hover-color;
+    }
+  }
+}

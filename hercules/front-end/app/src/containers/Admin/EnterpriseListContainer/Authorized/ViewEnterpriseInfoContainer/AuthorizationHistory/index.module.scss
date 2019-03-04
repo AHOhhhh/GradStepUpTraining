@@ -1,0 +1,56 @@
+@import "../../../../../../../styles/colors";
+
+$table-main-line-color: #dbd9db;
+$table-head-backgound-color: #efefef;
+$table-td-border: 1px solid $table-main-line-color;
+$table-disable-font-color: #cac9ca;
+
+.authorization-history :global{
+
+  .ant-table {
+    border-top: solid 3px $table-main-line-color;
+    border-radius: 0;
+    table {
+      border-spacing: 0 5px;
+      padding: 0px 1px 2px 1px;
+
+      thead {
+        tr {
+          th {
+            text-align: center;
+            border-right: 2px solid white;
+            background: $table-head-backgound-color;
+            height: 30px;
+            padding: 0;
+          }
+          th:last-child {
+            border: none;
+          }
+        }
+      }
+      tbody {
+        tr {
+          &:hover {
+            box-shadow: 0px 2px 8px 1px $table-main-line-color;
+            td {
+              background: none;
+            }
+          }
+          td {
+            text-align: center;
+            vertical-align: top;
+            padding: 10px 0;
+            border-bottom: $table-td-border;
+            border-top: $table-td-border;
+          }
+          td:first-child {
+            border-left: $table-td-border;
+          }
+          td:last-child {
+            border-right: $table-td-border;
+          }
+        }
+      }
+    }
+  }
+}

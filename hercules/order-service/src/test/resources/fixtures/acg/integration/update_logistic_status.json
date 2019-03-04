@@ -1,0 +1,21 @@
+{
+  "orderId": "H17112015123810400000001",
+  "delegateOrderId": "H17112015123810400000003",
+  "logisticsStatus": [
+    {
+      "logisticsStatusInfo": "您的订单已电子签收,感谢您在京东购物,欢迎下次光临.",
+      "updateInfoTime": "2017-11-23T10:00:00+08:00",
+      "updateInfoUserName": "李四"
+    },
+    {
+      "logisticsStatusInfo": "订单已送达[xxx货运站]",
+      "updateInfoTime": "2017-11-22T10:00:00+08:00",
+      "updateInfoUserName": "张三"
+    },
+    {
+      "logisticsStatusInfo": "您的订单在北京首都机场分拣完成,准备发往[博鳌],派送航班HU13212,航班时间2017-12-01",
+      "updateInfoTime": "2017-11-21T10:00:00+08:00",
+      "updateInfoUserName": "张三"
+    }
+  ]
+}

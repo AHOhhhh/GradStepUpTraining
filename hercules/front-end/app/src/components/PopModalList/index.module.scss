@@ -1,0 +1,54 @@
+.modalList :global {
+  .search-bar {
+    margin-bottom: 10px;
+    text-align: right;
+
+    .notice {
+      display: inline-block;
+      padding-top: 15px;
+      float: left;
+
+      b {
+        color: #4f4fdf;
+      }
+    }
+  }
+
+  .ant-table-wrapper {
+    min-height: 390px;
+    padding-bottom: 50px;
+    overflow: auto;
+    position: relative;
+
+    &:after {
+      content: '';
+      display: block;
+      visibility: visible;
+      width: 100%;
+      border-top: solid 1px #d4d4d4;
+      bottom: 40px;
+      position: absolute;
+    }
+
+    .ant-spin-nested-loading {
+      position: static;
+
+      .ant-spin-container {
+        position: static;
+
+        .ant-pagination.ant-table-pagination {
+          float: none;
+          width: 100%;
+          margin: 0 auto;
+          position: absolute;
+          bottom: 0;
+        }
+      }
+    }
+
+    .ant-table-thead > tr > th, .ant-table-tbody > tr > td {
+      padding: 8px;
+      border: none;
+    }
+  }
+}

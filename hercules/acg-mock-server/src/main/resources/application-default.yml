@@ -1,0 +1,10 @@
+hlp:
+  services:
+    webapi-gateway:
+      host: localhost
+    user-service:
+      host: localhost
+    order-service:
+      host: localhost
+    config-server:
+      host: localhost

@@ -1,0 +1,28 @@
+@import "../../../../styles/colors";
+
+.operation-records-container {
+  margin-top: 30px;
+  margin-bottom: 78px;
+  min-height: 400px;
+
+  .card-container {
+    position: relative;
+    border-radius: 5px;
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+    background: $content-background-color;
+    min-height: 330px;
+
+    h2 {
+      padding: 30px 25px;
+      font-weight: 700;
+      font-size: 18px;
+    }
+
+    .operations-table {
+      padding: 0 20px;
+      margin-top: 68px;
+    }
+  }
+}

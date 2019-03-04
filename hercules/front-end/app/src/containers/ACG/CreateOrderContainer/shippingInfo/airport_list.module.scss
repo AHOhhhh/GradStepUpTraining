@@ -1,0 +1,92 @@
+:local .airport_list {
+  margin-bottom: 20px;
+  position: relative;
+
+  :global {
+    .list_name {
+      line-height: 24px;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+    .list_item {
+      padding-left: 24px;
+      line-height: 24px;
+
+      a {
+        color: #000000;
+
+        &:hover {
+          color: #4f4fdf;
+        }
+
+        &.selected {
+          color: #4f4fdf;
+        }
+      }
+    }
+  }
+}
+
+.airport_selector {
+  z-index: 2;
+  position: absolute;
+  padding-top: 10px;
+  box-shadow: 0 2px 5px 1px #d4d4d4;
+  border: solid 1px #d4d4d4;
+  background-color: #ffffff;
+  width: 350px;
+  height: 380px;
+
+  :global {
+    .ant-radio-group {
+      width: 100%;
+      text-align: center;
+    }
+
+    label.ant-radio-button-wrapper {
+      width: 137px;
+      height: 30px;
+      line-height: 30px;
+      font-size: 13px;
+      background-color: #ffffff;
+      box-shadow: none;
+      color: #888;
+
+      &:before {
+        background: none;
+      }
+
+      &:hover {
+        color: #000;
+      }
+
+      &:first-child {
+        border-radius: 4px 0 0 4px;
+      }
+
+      &:nth-child(2) {
+        border-radius: 0 4px 4px 0;
+      }
+
+      &.ant-radio-button-wrapper-checked {
+        color: #000;
+        background-color: rgba(0, 0, 0, 0.2);
+        border: solid 1px rgba(0, 0, 0, 0.2);
+      }
+    }
+
+    .ant-tabs {
+      .ant-tabs-tab {
+        margin-right: 0;
+      }
+
+      .ant-tabs-content > .ant-tabs-tabpane {
+        padding: 0 20px 20px;
+        height: 276px;
+        overflow: scroll;
+      }
+    }
+  }
+}

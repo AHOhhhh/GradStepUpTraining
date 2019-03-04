@@ -1,0 +1,14 @@
+{
+  "username": "testPlatformAdmin",
+  "fullname": "testPlatformAdmin",
+  "email": "platformAdmin@thoughtworks.com",
+  "cellphone": "1234567",
+  "telephone": "7654321",
+  "password": "hello",
+  "resettable": false,
+  "role": {
+    "id": "1",
+    "name": "PlatformAdmin"
+  },
+  "privileges": ["AllPrivileges"]
+}

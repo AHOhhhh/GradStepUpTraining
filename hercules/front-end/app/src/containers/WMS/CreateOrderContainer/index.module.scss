@@ -1,0 +1,240 @@
+@import "../../../../styles/variables";
+@import "../../../../styles/colors";
+@import "../share/styles/index.module.scss";
+
+.create-order {
+  $tips-height: 78px;
+
+  .cancel-btn {
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+    padding: 0 25px;
+  }
+
+  .title {
+    display: inline-block;
+    width: calc(100% - 100px);
+    font-size: 32px;
+    text-align: left;
+    margin: 32px 0;
+  }
+
+  .content-box {
+    border-radius: 5px;
+    padding: 32px 70px 15px 32px;
+
+    &.contacts-box {
+      border-bottom: dashed 1px rgba(221, 221, 221, 0.5);
+    }
+  }
+
+  .operation {
+    padding-left: 34px;
+    padding-top: 20px;
+    text-align: left;
+    color: #299ed5;
+    cursor: pointer;
+
+    .more {
+      display: inline-block;
+      width: 128px;
+    }
+
+    .add {
+      width: 128px;
+      display: inline-block;
+    }
+  }
+
+  .row {
+    margin-bottom: 25px;
+    &:after {
+      clear: both;
+    }
+
+    .vertical-middle {
+      vertical-align: middle;
+    }
+
+    .price-label {
+      line-height: 40px;
+      vertical-align: top;
+    }
+
+    .price-item {
+      width: 200px;
+    }
+
+    .price-input {
+      border: solid 1px rgba(219, 217, 219, 0.99);
+      font-size: 24px;
+      line-height: 40px;
+      color: #ff3645;
+    }
+
+    .has-feedback::after {
+      line-height: 40px;
+    }
+
+    .price-statement {
+      font-size: 12px;
+      line-height: 1.17;
+      text-align: left;
+      color: #959495;
+    }
+
+    &.negotiable {
+      .label {
+        line-height: 22px;
+      }
+      .text {
+        font-size: 22px;
+        line-height: 1;
+        color: #ff3645;
+      }
+
+    }
+    &.has-tips {
+      position: relative;
+
+      .text {
+        width: 32px;
+      }
+    }
+  }
+
+  .confirm-box {
+    text-align: center;
+    .button {
+      height: 40px;
+      margin-left: 24px;
+      vertical-align: middle;
+      line-height: 1.33;
+      text-align: center;
+      color: $font-light-gray;
+
+      &.primary {
+        color: $content-background-color;
+      }
+    }
+  }
+
+  .table-like {
+    display: table;
+    .row {
+      display: table-row;
+      line-height: 32px;
+
+      &:hover {
+        background-color: rgba(200, 22, 29, 0.1);
+      }
+
+      .cell {
+        display: table-cell;
+
+        &:nth-child(1) {
+          width: 22px;
+          .ant-radio-wrapper {
+            top: -1px;
+          }
+        }
+        &:nth-child(2) {
+          width: 70px;
+        }
+        &:nth-child(3) {
+          width: 510px;
+        }
+        &:nth-child(4) {
+          width: 214px;
+        }
+        &:nth-child(5) {
+          width: 55px;
+          line-height: 14px;
+          text-align: right;
+          color: #0f8feb;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  .highlight {
+    color: $main-color;
+  }
+
+  .tips-icon {
+    display: inline-block;
+    background-image: url("./images/mark.svg");
+    background-repeat: no-repeat;
+    width: 13px;
+    height: 13px;
+    vertical-align: middle;
+    margin-left: 5px;
+  }
+
+  .tips-box {
+    position: absolute;
+    left: 245px;
+    bottom: -6px;
+    .tips {
+      $box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+      $border: solid 1px rgba(221, 221, 221, 0.5);
+      position: relative;
+      display: inline-block;
+      width: 321px;
+      height: $tips-height;
+      box-shadow: $box-shadow;
+      border: $border;
+      padding: 8px 0 8px 14px;
+      margin-left: 20px;
+      background-color: $content-background-color;
+
+      .tips-title {
+        display: inline-block;
+        vertical-align: middle;
+        color: $meta-title-color;
+        background-image: url("./images/light.svg");
+        background-repeat: no-repeat;
+        width: 16px;
+        height: 13px;
+      }
+      .describe {
+        display: inline-block;
+        vertical-align: top;
+        width: calc(100% - 37px);
+      }
+
+      &:before {
+        content: " ";
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        left: -7px;
+        top: 80%;
+        margin-top: -8px;
+        border-left: solid 1px rgba(221, 221, 221, 0.5);
+        border-top: solid 1px rgba(221, 221, 221, 0.5);
+        border-width: 2px;
+        transform: rotate(-45deg);
+        background-color: #FFFFFF;
+      }
+    }
+  }
+
+  .icon {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin-left: 4px;
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    &.icon-unfold {
+      background-image: url("./images/unfold.svg");
+    }
+    &.icon-fold {
+      background-image: url("./images/fold.svg");
+    }
+  }
+}

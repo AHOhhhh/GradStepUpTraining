@@ -1,0 +1,37 @@
+@import "../../../../styles/colors";
+
+
+.enterprise-qualification-info {
+  .qualification-title {
+    font-weight: bold;
+    line-height: 1;
+    text-align: left;
+    background-color: rgba(219, 217, 219, 0.6);
+    padding: 7px 0 8.8px 10px;
+  }
+
+  .without-verify-statement {
+    text-align: center;
+    min-height: 160px;
+    line-height: 160px;
+
+    .upload-link {
+      color: #f9a300;;
+    }
+  }
+
+  .qualification-content {
+    padding: 5px 10px;
+    .row {
+      margin: 5px 0;
+
+      .label {
+        color: #959495;
+      }
+
+      .content {
+        word-break: break-all;
+      }
+    }
+  }
+}

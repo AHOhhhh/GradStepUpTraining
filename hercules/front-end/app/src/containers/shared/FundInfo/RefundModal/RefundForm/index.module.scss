@@ -1,0 +1,39 @@
+.form-box{
+  text-align: center;
+  .row {
+    .title {
+      display: inline-block;
+      width: 120px;
+      font-size: 16px;
+      vertical-align: middle;
+      line-height: 40px;
+      text-align: right;
+      color: rgba(0, 0, 0, 0.7);
+      .icon {
+        color: red;
+      }
+    }
+  }
+  .form-item {
+    width: 250px;
+    display: inline-block;
+    color: red;
+  }
+}
+
+:global .ant-form-explain{
+  text-align:left;
+}
+
+
+
+
+.warning-msg {
+  text-align: center;
+  span {
+    color: #4f4fdf;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-left: 10px;
+  }
+}

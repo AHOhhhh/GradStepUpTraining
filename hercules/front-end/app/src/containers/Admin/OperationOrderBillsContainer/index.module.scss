@@ -1,0 +1,24 @@
+.orderBillTable :global {
+  .ant-table-thead > tr > th {
+    font-weight: bold;
+  }
+
+  .ant-table-thead > tr > th:first-child,
+  .ant-table-tbody > tr > td:first-child {
+    padding-left: 40px;
+  }
+}
+
+.btnGroup {
+  margin: 0 0 25px 25px;
+  .btn {
+    width: 66px;
+    height: 27px;
+    border-radius: 5px;
+    background-color: #4f4fdf;
+    color: #ffffff;
+    box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.08);
+    border: solid 1px #4f4fdf;
+  }
+}
+

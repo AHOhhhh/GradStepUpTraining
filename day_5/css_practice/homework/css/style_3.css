@@ -1,0 +1,16 @@
+div[title] {
+  color: yellow;
+}
+
+div[title*=demo] {
+  color: aquamarine;
+}
+
+div[title=demo] {
+  color: rosybrown;
+}
+
+div[title^=zh],
+div[title^=zh-] {
+  color: blue;
+}

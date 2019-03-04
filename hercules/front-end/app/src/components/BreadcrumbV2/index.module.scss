@@ -1,0 +1,24 @@
+@import "../../../styles/variables";
+
+.breadcrumb :global {
+  margin-top: 24px;
+  .ant-breadcrumb {
+    .ant-breadcrumb-link {
+      font-size: 12px;
+      line-height: 1.57;
+      text-align: left;
+      color: $font-light-gray;
+    }
+
+    .ant-breadcrumb-separator {
+      color: $font-light-gray;
+    }
+
+    .current-page {
+      font-size: 12px;
+      line-height: 1.57;
+      text-align: left;
+      color: $font-dark-gray;
+    }
+  }
+}

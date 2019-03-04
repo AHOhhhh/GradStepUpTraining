@@ -1,0 +1,33 @@
+.hidden{
+  display: none;
+}
+
+.previewMask {
+  z-index: 100000;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0,0,0,0.8);
+
+  .previewCancelIcon {
+    background: url('./assets/close.svg') center no-repeat;
+    width: 26px;
+    height: 26px;
+    position: absolute;
+    right: 5%;
+    top: 10%;
+    cursor: pointer;
+  }
+
+  .previewImage {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0,1), 0 6px 20px 0 rgba(0, 0, 0,1);
+    width:600px;
+    height:400px;
+    display: block;
+    margin-top: 120px;
+    margin-left:auto;
+    margin-right:auto;
+  }
+}

@@ -1,0 +1,42 @@
+.bank-list :global {
+  padding-top: 34px;
+  .gutter-example .ant-row > div {
+    background: transparent;
+    border: 0;
+  }
+
+  .gutter-box {
+    margin-bottom: 24px;
+    border: solid 1px rgba(219, 217, 219, 0.99);
+    padding: 16px 25px;
+    img {
+      vertical-align: middle;
+      border: none !important;
+    }
+    span {
+      margin-left: 24px;
+      font-size: 12px;
+      line-height: 1.0;
+      text-align: left;
+      color: rgb(100, 100, 100);
+      border: none !important;
+    }
+  }
+  .box-bank {
+    position: relative;
+
+    :hover {
+      border: 1px solid red;
+    }
+
+    .selected {
+      left: 0;
+      bottom: 0;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      border: solid 3px rgba(223, 79, 79, 0.99);
+    }
+  }
+
+}

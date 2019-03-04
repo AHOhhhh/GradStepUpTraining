@@ -1,0 +1,79 @@
+@import "../../../../../styles/variables";
+
+.container {
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 4px;
+
+  h2 {
+    font-size: 22px;
+    color: #000;
+  }
+
+  .message {
+    margin-top: 90px;
+    font-size: 22px;
+    text-align: center;
+    color: $font-light-gray;
+  }
+
+  .tip {
+    margin: 20px 0 80px;
+    text-align: center;
+    color: $font-light-gray;
+    user-select: none;
+
+    a {
+      color: $content-blue;
+
+      &:hover{
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .offer {
+    position: relative;
+    margin-top: 30px;
+    font-size: 22px;
+    color: #000;
+
+    img {
+      position: absolute;
+      top: 6px;
+      width: 20px;
+      height: 20px;
+    }
+
+    .label {
+      margin: 0 32px 0 36px ;
+    }
+  }
+
+  .apply-container {
+    margin: 60px 0;
+    text-align: center;
+
+    p {
+      display: inline-block;
+      margin-right: 20px;
+      padding: 15px 0;
+      font-size: 22px;
+      color: $font-light-gray;
+    }
+
+    a {
+      display: inline-block;
+      padding: 15px 36px;
+      font-size: 18px;
+      color: #fff;
+      background-color: $navigation-background-color;
+      box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.12);
+      border: none;
+      border-radius: 4px;
+      &:hover, &:focus, &:active {
+        text-decoration: none;
+      }
+    }
+  }
+}

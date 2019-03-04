@@ -1,0 +1,62 @@
+@mixin no-animation() {
+  -o-transition-property: none !important;
+  -moz-transition-property: none !important;
+  -ms-transition-property: none !important;
+  -webkit-transition-property: none !important;
+  transition-property: none !important;
+  -o-transform: none !important;
+  -moz-transform: none !important;
+  -ms-transform: none !important;
+  -webkit-transform: none !important;
+  transform: none !important;
+  -webkit-animation: none !important;
+  -moz-animation: none !important;
+  -o-animation: none !important;
+  -ms-animation: none !important;
+  animation: none !important;
+}
+
+.offer-card {
+  margin-bottom: 20px;
+  
+  .card-border :global{
+    border-radius: 4px;
+    @include no-animation();
+    .ant-card-body {
+      padding: 24px;
+    }
+  }
+
+  .card-border_focus :global{
+    border: #4f4fdf 3px solid;
+    border-radius: 4px;
+    @include no-animation();
+    .ant-card-body {
+      padding: 21px;
+    }
+  }
+
+  .offer-card__table {
+    width: 100%;
+    td {
+      vertical-align: top;
+    }
+
+    td.line {
+      border-left: solid 1px rgba(97, 97, 97, 0.1);
+    }
+
+    .offer-card__checkbox :global {
+      margin-left: 16px;
+      margin-top: 8px;
+      .ant-checkbox {
+        .ant-checkbox-inner {
+          transform: scale(1.6);
+        }
+        .ant-checkbox-inner:after {
+          left: 3px;  // checkbox 勾选
+        }
+      }
+    }
+  }
+}

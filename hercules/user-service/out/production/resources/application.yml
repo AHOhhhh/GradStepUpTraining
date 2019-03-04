@@ -1,0 +1,97 @@
+hlp:
+  services:
+    webapi-gateway:
+      host: webapi-gateway
+      port: 8080
+    user-service:
+      host: user-service
+      port: 8001
+    order-service:
+      host: order-service
+      port: 8002
+    config-server:
+      host: config-server
+      port: 8099
+    acg-mock-server:
+      host: acg-mock-server
+      port: 30000
+
+  endpoints:
+    user: http://${hlp.services.user-service.host}:${hlp.services.user-service.port}
+    order: http://${hlp.services.order-service.host}:${hlp.services.order-service.port}
+    config-server: http://${hlp.services.config-server.host}:${hlp.services.config-server.port}
+    acg-mock-server: http://${hlp.services.acg-mock-server.host}:${hlp.services.acg-mock-server.port}
+
+
+  platform:
+    service-user:
+      id: 708ccc12-bd0c-3ba2-8754-c3e39a5dd62a
+      name: platform0service
+      role: PlatformService
+    time-zone: Asia/Shanghai
+  authorization:
+    jwt:
+      secret: HerculesSecretKeyToGenJWTs
+      expires: 14400
+
+user-service:
+  ribbon:
+    listOfServers: ${hlp.services.user-service.host}:${hlp.services.user-service.port}
+
+order-service:
+  ribbon:
+    listOfServers: ${hlp.services.order-service.host}:${hlp.services.order-service.port}
+
+spring:
+  application:
+    name: user-service
+  jpa:
+    generate-ddl: false
+    hibernate:
+      ddl-auto: validate
+
+  datasource:
+    url: jdbc:mysql://mysql:3306/user?characterEncoding=utf8mb4
+    username: root
+    password: password
+    driver-class-name: com.mysql.jdbc.Driver
+
+  active-profile: ${spring.profiles.active:default}
+
+  http:
+      multipart:
+        max-file-size: 4MB
+        max-request-size: 4MB
+
+flyway:
+  enabled: true
+  out-of-order: true
+  encoding: UTF-8
+
+server:
+  port: ${hlp.services.${spring.application.name}.port}
+
+management:
+  context-path: /system
+  security:
+    enabled: false
+
+security:
+  basic:
+    enabled: false
+
+
+# User Config
+
+upload-file:
+  root:
+    dir: /data/pictures
+
+init:
+  enterprise:
+    admin:
+      password: letmein123!
+
+debug:
+  jwt-token:
+    enabled: false

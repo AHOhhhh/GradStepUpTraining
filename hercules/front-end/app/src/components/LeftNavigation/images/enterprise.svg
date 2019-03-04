@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>企业管理1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="企业用户界面ICON" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-227.000000, -514.000000)">
+        <g id="Group-4" transform="translate(229.000000, 518.000000)">
+            <path d="M6,7 C7.1045695,7 8,6.1045695 8,5 C8,3.8954305 7.1045695,3 6,3 C4.8954305,3 4,3.8954305 4,5 C4,6.1045695 4.8954305,7 6,7 Z" id="Oval-47" stroke="#000000"></path>
+            <path d="M9,10 C9,8.34314575 7.65685425,7 6,7 C4.34314575,7 3,8.34314575 3,10" id="Oval-47-Copy" stroke="#000000"></path>
+            <path d="M10.5,4.5 L13.5,4.5" id="Line-2" stroke="#000000" stroke-linecap="square"></path>
+            <path d="M10.5,7.5 L13.5,7.5" id="Line-2-Copy" stroke="#000000" stroke-linecap="square"></path>
+            <rect id="Rectangle-3" stroke="#6A6A6A" x="0.5" y="0.5" width="17" height="12" rx="1.4000001"></rect>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,65 @@
+@import "../../../../../../styles/colors";
+
+.order-info {
+  background-color: white;
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  border-radius: 4px;
+  .price-title {
+    font-size: 24px;
+    line-height: 1.0;
+    text-align: left;
+    color: rgb(0, 0, 0);
+    padding: 30px 0 16px 40px;
+  }
+  .price-table :global {
+    .ant-table table .ant-table-thead tr {
+      background-color: rgba(216, 216, 216, 0.1);
+    }
+    .ant-table-thead tr th {
+      font-size: 12px;
+      text-align: left;
+      color: rgb(0, 0, 0);
+      padding: 10px 40px;
+      background-color: transparent;
+      width: 40%;
+    }
+    .ant-table-tbody tr td {
+      color: rgb(0, 0, 0);
+      text-align: left;
+      padding: 26px 40px;
+      border-bottom: dotted 1px rgb(213, 213, 213);
+    }
+  }
+  .price-total {
+    padding: 27px 40px 0px 0px;
+    text-align: center;
+    .text {
+      font-size: 20px;
+      color: #4a4a4a;
+    }
+    .total {
+      font-size: 28px;
+      line-height: 0.75;
+      color: #000000;
+
+    }
+
+    .refresh-price-text {
+      .refresh-price {
+        font-size: 12px;
+        line-height: 1.5;
+        text-align: right;
+        color: #808080;
+        .refresh {
+          color: $content-blue;
+          cursor: pointer;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+
+    }
+  }
+}

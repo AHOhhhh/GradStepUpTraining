@@ -1,0 +1,28 @@
+.item {
+  line-height: 1.5;
+  color: #000000;
+  margin: 8px 0;
+  .title {
+    opacity: 0.5;
+    text-align: right;
+  }
+  .value {
+    text-align: right;
+    float: right;
+    padding-right: 16px;
+    word-break: break-all;
+  }
+}
+
+.summary {
+  margin-top: 22px;
+  height: 36px;
+  line-height: 36px;
+  .title {
+    font-size: 16px;
+  }
+  .value {
+    font-size: 24px;
+    color: #4f4fdf;
+  }
+}

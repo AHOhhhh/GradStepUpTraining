@@ -1,0 +1,68 @@
+.order-detail-status {
+  background-color: #ffffff;
+  padding: 32px 20px;
+  margin-bottom: 4px;
+  border-radius: 4px;
+  font-size: 14px;
+  max-width: 270px;
+
+  .title{
+    .order-id {
+      color: #000000;
+    }
+
+    .order-title {
+      font-size: 16px;
+      color: #686767;
+      text-align: right;
+    }
+  }
+
+  hr {
+    margin: 24px 0px;
+    opacity: 0.7;
+    border: solid 1px #e9e9e9;
+  }
+
+
+  .order-detail-content {
+    color: #000000;
+    .detail {
+      margin-bottom: 12px;
+    }
+
+    .label {
+      text-align: right;
+      color: #646464;
+    }
+
+    .status {
+      color: #4f4fdf;
+      word-break: break-all;
+    }
+
+    .orderName {
+      word-break: break-all;
+    }
+
+    .enterpriseName {
+      a {
+        color: #000000;
+        word-break: break-all;
+        text-decoration: underline;
+      }
+    }
+
+    .createAt {
+      word-break: break-all;
+    }
+
+    .updatedAt{
+      word-break: break-all;
+    }
+
+    .refundStatus{
+      word-break: break-all;
+    }
+  }
+}

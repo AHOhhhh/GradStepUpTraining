@@ -1,0 +1,72 @@
+@import "../../../../styles/variables";
+@import "../../../../styles/colors";
+@import "../share/styles/index.module.scss";
+
+.priceVerification {
+  .highlight-font {
+    color: $link-hover-color;
+  }
+
+  .info-font {
+    color: $meta-title-color;
+  }
+
+  .refresh {
+    color: $content-blue;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .nowrap {
+    white-space: nowrap;
+  }
+
+  .larger-font {
+    font-size: 22px;
+  }
+
+  .title {
+    margin-top: 32px;
+    margin-bottom: 16px;
+    font-size: 32px;
+    line-height: 1;
+    text-align: left;
+    color: #686767;
+  }
+
+  .stepBox {
+    height: 143px;
+    padding: 33px 0;
+  }
+
+  .content-box {
+    padding-top: 24px;
+    padding-bottom: 8px;
+
+    &.order-status {
+      .label {
+        line-height: 2.3;
+      }
+    }
+  }
+
+  .complex-content {
+    vertical-align: top;
+  }
+
+  .total-price {
+    color: #ff3645;
+    font-size: 22px;
+    line-height: 1;
+    text-align: left;
+  }
+
+  .order-code {
+    line-height: 1.07;
+    border-bottom: dashed 1px rgba(221, 221, 221, 0.5);
+    position: relative;
+  }
+}
+

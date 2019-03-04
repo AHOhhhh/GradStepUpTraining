@@ -1,0 +1,44 @@
+.wms-order-detail {
+  display: table;
+  padding: 10px 0;
+  width: 100%;
+
+  .basis-info {
+    background-color: transparent;
+    display: table-cell;
+    min-width: 220px;
+    vertical-align: top;
+  }
+
+  .vendor-info {
+    background-color: transparent;
+    display: table-cell;
+    min-width: 180px;
+    vertical-align: top;
+  }
+
+  .block {
+    display: table-cell;
+    min-width: 220px;
+    vertical-align: top;
+  }
+
+  .labeled-text {
+    margin: 6px 8px 6px 0;
+
+    .label {
+      color: #b2b2b2;
+      width: 72px;
+      display: inline-block;
+      word-break: keep-all;
+      vertical-align: top;
+    }
+
+    .secondary {
+      vertical-align: top;
+      display: inline-block;
+      max-width: calc(100% - 72px);
+      color: #000000;
+    }
+  }
+}

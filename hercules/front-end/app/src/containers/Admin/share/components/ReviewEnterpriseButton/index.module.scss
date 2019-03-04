@@ -1,0 +1,29 @@
+@import "../../../../../../styles/colors";
+
+.review-enterprise-form :global {
+
+  .ant-form-item-label {
+    line-height: 30px;
+    font-weight: bold;
+  }
+
+  .ant-radio {
+    position: relative;
+    top: -2px
+  }
+
+  .ant-radio-wrapper {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    font-weight: normal;
+  }
+
+  .ant-form-item {
+    margin-bottom: 0;
+  }
+
+  .operate {
+    margin-top: 24px;
+  }
+}

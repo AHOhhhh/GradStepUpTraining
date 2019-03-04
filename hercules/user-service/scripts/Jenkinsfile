@@ -1,0 +1,40 @@
+pipeline {
+    agent {
+        label 'java'
+    }
+    stages {
+        stage('Build') {
+            steps {
+                sh "./gradlew clean compileJava compileTestJava --info"
+            }
+        }
+        stage('Check') {
+            steps {
+                sh "./gradlew check -xtest --info"
+            }
+        }
+//        stage('Test') {
+//            steps {
+//                // sh "rm -rf test-config"
+//                // sh "git clone `git remote get-url origin | sed s/${env.JOB_BASE_NAME}/config/g` test-config"
+//                sh "./gradlew test jacocoTestReport --info"
+//            }
+//        }
+        stage('Publish') {
+            steps {
+                sh "./gradlew bootRepackage -Prelease --info"
+                sh "sudo ./scripts/publish.sh ${env.JOB_BASE_NAME} ${env.BUILD_ID}"
+            }
+        }
+        stage('Deploy') {
+            steps {
+                sh "sudo ./scripts/deploy.sh ${env.JOB_BASE_NAME} ${env.BUILD_ID}"
+            }
+        }
+    }
+    post {
+        always {
+            archiveArtifacts artifacts: 'build/reports/**'
+        }
+    }
+}

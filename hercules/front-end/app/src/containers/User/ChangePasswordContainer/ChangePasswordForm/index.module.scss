@@ -1,0 +1,70 @@
+@import "../../SignUpContainer/index.module";
+
+.form-box :global {
+  background-color: $content-background-color;
+  padding: 25px 20px;
+  width: 500px;
+  margin: 10px auto 119px;
+  .row {
+    text-align: left;
+    .title {
+      display: inline-block;
+      width: 103px;
+      font-size: 16px;
+      line-height: $input-height;
+      text-align: right;
+      margin-right: 10px;
+    }
+
+    input {
+      width: 330px;
+    }
+
+    .form-item :global {
+      display: inline-block;
+    }
+
+    .captcha-code {
+      width: 50%;
+    }
+
+    .captcha-image {
+      width: 98px;
+      height: 40px;
+      margin-left: 20px;
+      vertical-align: top;
+    }
+
+    .captcha-refresh {
+      float: right;
+      background-image: url("./assets/refresh.svg");
+      width: 23px;
+      height: 23px;
+      margin-right: 8px;
+      margin-top: 8px;
+      cursor: pointer;
+    }
+
+    .error-message {
+      padding-left: 115px;
+      float: left;
+      color: #3441f0;
+      margin-top: -10px;
+      padding-top: 5px;
+      font-size: 12px;
+    }
+  }
+
+  .operate {
+    margin-top: 16px;
+    margin-bottom: 45px;
+
+    .button {
+      display: inline-block;
+    }
+  }
+  .has-feedback::after {
+    line-height: $input-height;
+  }
+}
+

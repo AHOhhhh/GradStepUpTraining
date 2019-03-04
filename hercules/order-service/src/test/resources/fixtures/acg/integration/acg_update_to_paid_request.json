@@ -1,0 +1,12 @@
+{
+  "orderId": "H17112015123810400000001",
+  "delegateOrderId": "H17112015123810400000003",
+  "delegateOrderPayId": "H17112015123810400000002",
+  "transactions": {
+    "paymentTransaction": "1",
+    "payTime": "2017-10-29T10:35:00+08:00",
+    "payment": 100,
+    "currency": "CNY",
+    "payMethod": "新生支付"
+  }
+}

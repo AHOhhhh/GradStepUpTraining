@@ -1,0 +1,45 @@
+.Container {
+  background-color: #eee;
+  border: 1px solid #e6e6e6;
+  border-radius: 5px;
+  padding: 15px;
+  max-width: 800px;
+}
+
+.TabPane {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #e6e6e6;
+  border-top: 0;
+}
+
+.card {
+  margin-bottom: 20px;
+}
+
+.card-body{
+  padding: 0.5em;
+}
+.card-img-top {
+  height: 180px;
+}
+
+.button {
+  float: right;
+}
+
+.table {
+  line-height: 30px;
+}
+
+.cart {
+  margin-bottom: 20px;
+}
+
+.cart-count {
+  width: 200px;
+}
+
+.cart-sum {
+  width: 30%;
+}

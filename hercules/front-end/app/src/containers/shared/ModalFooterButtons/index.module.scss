@@ -1,0 +1,11 @@
+@import "../../../../styles/colors";
+
+.modal-footer {
+  .button {
+    width: 106px;
+
+    &.cancel {
+      color: $font-light-gray;
+    }
+  }
+}

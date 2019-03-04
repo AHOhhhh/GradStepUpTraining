@@ -1,0 +1,94 @@
+@import "../../../../styles/variables";
+
+.orderManagement {
+  width: $page-width;
+  margin: auto;
+
+  .leftWrapper {
+    width: 910px;
+    display: inline-block;
+  }
+
+  .rightWrapper {
+    display: inline-block;
+    width: 270px;
+    vertical-align: top;
+    margin-left: 20px;
+    margin-bottom: 16px;
+    > div {
+      margin-bottom: 4px;
+    }
+  }
+
+  .content {
+    margin-top: 60px;
+  }
+
+  .orderRecord {
+    margin: 40px 0;
+  }
+
+  .componentPanel {
+    margin-top: 60px;
+    position: relative;
+  }
+
+  .status {
+    background-color: $content-background-color;
+    margin-bottom: 4px;
+    border-radius: 4px;
+    box-shadow: 0 1px 4px 1px rgba(233, 233, 233, 0.5);
+    padding: 43px 0px;
+
+    .title {
+      font-size: 22px;
+      font-weight: bold;
+      color: $light-green;
+      text-align: center;
+      img, span {
+        vertical-align: middle;
+        margin: 0 2px;
+      }
+    }
+  }
+
+  .cancelContainer {
+    padding-top: 180px;
+    height: 430px;
+    width: 100%;
+    background: $content-background-color;
+    text-align: center;
+    .message {
+      h2 {
+        color: $font-black;
+      }
+      .date {
+        margin-top: 20px;
+        span {
+          color: $label-gray;
+        }
+      }
+    }
+  }
+
+  .reOrder {
+    width: 270px;
+    background-color: $content-background-color;
+    box-shadow: 0 1px 4px 1px rgba(233, 233, 233, 0.5);
+    padding: 60px 24px;
+    text-align: center;
+    a {
+      display: inline-block;
+      padding: 15px 36px;
+      font-size: 18px;
+      color: $navigation-background-color;
+      background-color: #fff;
+      border: 1px solid $navigation-background-color;
+      border-radius: 4px;
+    }
+    p {
+      font-size: 12px;
+      margin-bottom: 10px;
+    }
+  }
+}

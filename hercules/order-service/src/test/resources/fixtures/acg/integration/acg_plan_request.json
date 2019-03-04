@@ -1,0 +1,11 @@
+{
+  "orderId": "H17112015123810400000001",
+  "delegateOrderId": "H17112015123810400000003",
+  "scheduledPickupTime": "2017-12-30T10:00:00+08:00",
+  "pickupTelephone": "010-66578392",
+  "scheduledFlight": "MU100",
+  "scheduledTakeOffTime": "2017-12-30T12:00:00+08:00",
+  "scheduledLandingTime": "2017-12-30T15:00:00+08:00",
+  "expectedDeliveryTime": "2017-12-30T17:00:00+08:00",
+  "deliveryTelephone": "021-88790394"
+}

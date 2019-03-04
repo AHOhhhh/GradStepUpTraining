@@ -1,0 +1,49 @@
+.modal :global {
+
+  .ant-modal {
+    .ant-modal-content {
+      margin: auto;
+      border-radius: 0;
+      .ant-modal-close {
+        width: 37px;
+        height: 37px;
+        .ant-modal-close-x {
+          width: 37px;
+          height: 37px;
+          line-height: 37px;
+          font-size: 22px;
+          color: #959495;
+        }
+      }
+      .ant-modal-header {
+        padding: 9px 9px 9px 20px;
+        .ant-modal-title {
+          font-size: 16px;
+          font-weight: bold;
+          line-height: 1.14;
+          letter-spacing: 0.5px;
+          text-align: left;
+        }
+      }
+      .ant-modal-footer {
+        display: none;
+      }
+      .ant-modal-body {
+        height: 260px;
+        text-align: center;
+        .customerContent {
+          line-height: 160px;
+        }
+        .operate {
+          position: absolute;
+          left: 50px;
+          right: 50px;
+          bottom: 37px;
+          .submit {
+            margin-right: 7px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,37 @@
+.goodList {
+  color: #000000;
+  .lineItem {
+    padding: 0 0 8px 0;
+    width: 190px;
+
+    .goodIcon {
+      display: inline-block;
+      width: 17px;
+      height: 17px;
+      background-image: url("../../shared/assets/good-icon.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      margin: 3px 8px 0 0;
+    }
+
+    .goodName {
+      padding-top: 2px;
+      word-break: break-all;
+    }
+  }
+
+  .hiddenItem {
+    display: none;
+  }
+
+  .status {
+    line-height: 1.5;
+    color: #4f4fdf;
+    padding-left: 25px;
+    cursor: pointer;
+  }
+
+  .hiddenStatus {
+    display: none;
+  }
+}

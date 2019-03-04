@@ -1,0 +1,12 @@
+:local .airport_select {
+  box-sizing: border-box;
+  margin-bottom: 20px;
+
+  .airport_panel {
+    height: 40px;
+    line-height: 40px;
+    cursor: pointer;
+    border: 1px solid rgba(219, 217, 219, 0.99);
+    padding: 0 20px;
+  }
+}

@@ -1,0 +1,20 @@
+@import "../variables";
+
+.signup-form {
+  .ant-form {
+    .ant-row {
+      display: inline-block;
+    }
+    .ant-form-explain {
+      text-align: left;
+    }
+
+    .has-feedback::after {
+      line-height: $input-height;
+    }
+  }
+  .label-required:before {
+    content: "*";
+    color: #1D16C8;
+  }
+}

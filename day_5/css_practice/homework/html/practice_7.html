@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Box练习</title>
+  <style type="text/css">
+
+
+    .content{
+      text-align: center;
+    }
+    .box{
+      border: 5px solid #ccc;
+      width: 400px;
+      height: 200px;
+      margin: 10px;
+      display: inline-block;
+      background-color: rgb(29, 223, 158);
+    }
+   
+
+    .aa::before{
+      display: table;
+      content: '';
+    }
+    </style>
+</head>
+
+<body>
+  <div class="content">
+      <div class="box"></div>
+      <div class="box"></div>
+      <div class="box"></div>
+  </div>
+  <div class="content">
+    <div class="box"></div>
+  </div>
+
+  <div class="aa" style="display: block;">
+    <div style="height: 100px; width: 100px; float: left;"></div>
+    <div style="height: 100px; width: 100px; float: left;"></div>
+    <div style="height: 100px; width: 100px; float: left;"></div>
+  </div>
+</body>
+
+</html>

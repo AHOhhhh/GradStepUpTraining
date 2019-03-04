@@ -1,0 +1,14 @@
+{
+  "username": "testUser",
+  "fullname": "testUser",
+  "email": "user@thoughtworks.com",
+  "cellphone": "1234567",
+  "telephone": "7654321",
+  "password": "hello",
+  "role": {
+    "id": "3",
+    "name": "EnterpriseUser"
+  },
+  "privileges": ["AllPrivileges"],
+  "resettable": false
+}

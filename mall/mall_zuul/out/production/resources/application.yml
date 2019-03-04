@@ -1,0 +1,30 @@
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1/mall_micro_service_user?characterEncoding=utf-8
+    username: root
+    password: root
+  jpa:
+    show-sql: true
+    database: mysql
+
+server:
+  port: 8080
+zuul:
+  routes:
+    product:
+      url: http://localhost:7777/products
+      path: /products/**
+    order:
+      url: http://localhost:9999/orders
+      path: /orders/**
+    user:
+      url: http://localhost:7979/login
+      path: /login/**
+    tw-mall-app:
+      url: http://localhost:3000/
+      path: /**
+management:
+  endpoints:
+    web:
+      exposure:
+        include: routes,filters

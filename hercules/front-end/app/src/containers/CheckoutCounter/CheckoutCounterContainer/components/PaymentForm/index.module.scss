@@ -1,0 +1,21 @@
+.form-box {
+  .row {
+    .title {
+      display: inline-block;
+      width: 120px;
+      font-size: 16px;
+      vertical-align: middle;
+      line-height: 40px;
+      text-align: right;
+      color: rgba(0, 0, 0, 0.7);
+      .icon {
+        color: red;
+      }
+    }
+  }
+  .form-item {
+    width: 250px;
+    display: inline-block;
+    color: red;
+  }
+}

@@ -1,0 +1,51 @@
+$stepper-main-color: #4f4fdf;
+$stepper-grey: #c0c0c0;
+$max-text-item-width: 120px;
+
+.wise-port-order-steppers :global {
+  margin: 0 auto;
+  margin-bottom: -40px;
+  width: calc(100% - #{$max-text-item-width});
+
+  ul {
+    position: relative;
+    bottom: 50px;
+    text-align: right;
+
+    li {
+      display: inline-block;
+      vertical-align: top;
+
+      .order-step-item-wrapper  {
+        position: relative;
+        transform: translateX(50%);
+      }
+    }
+  }
+}
+
+
+// override ant style
+.wise-port-order-steppers :global {
+  .ant-progress-status-success {
+    .ant-progress-bg {
+      background-color: $stepper-main-color;
+    }
+  }
+
+  .anticon {
+    padding-left: 10px;
+    font-weight: bold;
+  }
+  .anticon-custom-waiting::before {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+
+    border: 1px dotted white;
+    border-radius: 100%;
+    font-family: "anticon" !important;
+    color: white;
+  }
+}

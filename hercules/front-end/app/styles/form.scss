@@ -1,0 +1,31 @@
+@import "colors";
+@import "forms/signup-form";
+
+.ant-form {
+
+  .ant-form-item-label {
+    label {
+      opacity: 0.5;
+    }
+  }
+
+  .has-error {
+    .ant-form-explain {
+      margin-top: 3px;
+      font-size: 12px;
+      line-height: 1.5;
+    }
+  }
+
+  .ant-form-item-required:before {
+    color: $error-message-color;
+  }
+}
+
+.payment-info-textarea {
+  .ant-input {
+    height: 80px;
+  }
+}
+
+

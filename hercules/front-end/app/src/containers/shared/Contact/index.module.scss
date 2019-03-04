@@ -1,0 +1,74 @@
+.box-title {
+  font-size: 24px;
+  color: #686767;
+  margin-bottom: 30px;
+}
+
+.contact-role {
+  font-size: 20px;
+  line-height: 1.35;
+  color: #000000;
+  opacity: 0.5;
+}
+
+.contacts-box {
+  padding: 10px 0 10px 0;
+  background-color: rgba(216, 216, 216, 0.1);
+  margin-bottom: 15px;
+
+  .table-like {
+    display: table;
+    width: 100%;
+
+    .row {
+      display: table-row;
+
+      .cell {
+        display: table-cell;
+        line-height: 1.5;
+        text-align: left;
+        color: #000000;
+
+        &:nth-child(1) {
+          width: 5px;
+          word-break: break-all;
+          padding-right: 10px;
+        }
+        &:nth-child(2) {
+          width: 100px;
+          word-break: break-all;
+          padding-right: 10px;
+        }
+        &:nth-child(3) {
+          width: 300px;
+          word-break: break-all;
+          padding-right: 10px;
+        }
+        &:nth-child(4) {
+          width: 220px;
+        }
+        &:nth-child(5) {
+          width: 55px;
+          line-height: 14px;
+          text-align: right;
+          color: #0f8feb;
+          cursor: pointer;
+        }
+        .sub-cell {
+          display: inline-block;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+
+.operation {
+  .more, .add {
+    display: inline-block;
+    cursor: pointer;
+    line-height: 1.5;
+    text-align: left;
+    color: #4085de;
+  }
+}

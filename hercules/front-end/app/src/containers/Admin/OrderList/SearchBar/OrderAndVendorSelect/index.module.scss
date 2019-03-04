@@ -1,0 +1,18 @@
+.fix-gap {
+  margin-top: 2px;
+
+  .type-select :global{
+    width: 120px;
+    margin-right: 16px;
+    .ant-select-selection {
+      border-radius: 4px;
+    }
+  }
+
+  .vendor-select :global {
+    width: 120px;
+    .ant-select-selection {
+      border-radius: 4px;
+    }
+  }
+}

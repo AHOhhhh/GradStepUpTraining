@@ -1,0 +1,24 @@
+version: "3"
+
+networks:
+  service:
+
+services:
+  front-end:
+    image: nexus-release.hercules.fun/hercules/@@SERVICE@@:@@VERSION@@
+    deploy:
+      placement:
+        constraints:
+          - node.role == worker
+      replicas: 1
+      restart_policy:
+        delay: 10s
+    networks:
+      service:
+        aliases:
+          - front-end
+          - www.hercules.fun
+    ports:
+      - "81:80"
+    environment:
+      - TARGET=http://www.hercules.fun

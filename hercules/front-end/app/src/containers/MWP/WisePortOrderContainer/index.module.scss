@@ -1,0 +1,64 @@
+@import "../../../../styles/variables";
+
+.wise-port-container {
+  width: 1200px;
+  margin: 0 auto;
+
+  .stepper-container {
+    padding: 50px 0;
+  }
+
+  .main-section {
+    margin-right: 20px;
+    display: inline-block;
+    vertical-align: top;
+    width: 910px;
+    .cancel-container {
+      margin-top: 60px;
+      padding-top: 180px;
+      height: 430px;
+      width: 100%;
+      background: $content-background-color;
+      text-align: center;
+      .message {
+        h2 {
+          color: $font-black;
+        }
+        .date {
+          margin-top: 20px;
+          span {
+            color: $label-gray;
+          }
+        }
+      }
+    }
+  }
+
+  .right-side-bar {
+    display: inline-block;
+    width: 270px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+
+    .re-order {
+      width: 270px;
+      background-color: $content-background-color;
+      box-shadow: 0 1px 4px 1px rgba(233, 233, 233, 0.5);
+      padding: 60px 24px;
+      text-align: center;
+      a {
+        display: inline-block;
+        padding: 15px 36px;
+        font-size: 18px;
+        color: $navigation-background-color;
+        background-color: #fff;
+        border: 1px solid $navigation-background-color;
+        border-radius: 4px;
+      }
+      p {
+        font-size: 12px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

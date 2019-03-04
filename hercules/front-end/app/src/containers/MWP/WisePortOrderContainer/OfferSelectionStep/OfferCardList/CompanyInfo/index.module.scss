@@ -1,0 +1,48 @@
+.title {
+  .company-info {
+    .company-name {
+      height: 29px;
+      font-size: 22px;
+      text-align: left;
+      color: #000000;
+      width: 260px;
+      word-wrap: break-word;
+      word-break: break-all;
+      display: inline-block
+    }
+    .offer-types {
+      padding-top: 5px;
+      border-radius: 3px;
+      float: right;
+      .offer-type-label {
+        border-radius: 2px;
+      }
+      .import_clearance {
+        border: 1px solid #2e70d5;
+        color: #2e70d5;
+        padding: 5px;
+      }
+      .export_declaration {
+        border: 1px solid #25bb52;
+        color: #25bb52;
+        padding: 5px;
+      }
+      .export_agent {
+        border: 1px solid #895CBF;
+        color: #895CBF;
+        padding: 5px;
+      }
+      .plus {
+        margin: 0 7px;
+      }
+    }
+  }
+  .company-tel {
+    margin: 13px 0px 37px 0px;
+    .telephone {
+      font-size: 16px;
+      text-align: left;
+      color: #000000;
+    }
+  }
+}

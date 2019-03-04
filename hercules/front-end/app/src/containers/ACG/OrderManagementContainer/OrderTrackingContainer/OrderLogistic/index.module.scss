@@ -1,0 +1,91 @@
+.order-logistics {
+  padding-left: 40px;
+  background-color: #FFFFFF;
+  width: 910px;
+  margin-bottom: 40px;
+  .wrapper {
+    display: inline-block;
+    width: 100%;
+    color: #b1b1b1;
+    ul {
+      margin: 0 0 40px 0;
+      &.hidden {
+        overflow: hidden;
+        max-height: 42px;
+        li:after {
+          content: none;
+        }
+      }
+    }
+    li {
+      min-height: 42px;
+      vertical-align: middle;
+      position: relative;
+      margin-bottom: 10px;
+      span {
+        margin-right: 20px;
+        display: inline-block;
+        vertical-align: text-top;
+        &.show-more {
+          a {
+            span {
+              margin-right: 2px;
+            }
+            color: #4085de;
+            .icon {
+              font-size: 10px;
+            }
+          }
+        }
+        &.info {
+          width: 540px;
+        }
+      }
+      &:before {
+        content: '';
+        width: 12px;
+        height: 12px;
+        margin-right: 9px;
+        display: inline-block;
+        border-radius: 10px;
+        background-color: #a1a1a1;
+        background-clip: content-box;
+        position: relative;
+        left: 0;
+        top: 3px;
+      }
+      &:after {
+        content: '';
+        width: 1px;
+        height: calc(100% - 2px);
+        background-color: rgba(212, 212, 212, 0.5);
+        position: absolute;
+        left: 6px;
+        top: 17px;
+      }
+      &:first-child {
+        color: #000000;
+        &:before {
+          background-color: #4f4fdf;
+          width: 14px;
+          height: 14px;
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+          border: solid 2px white;
+        }
+      }
+      &:last-child:after,
+      &.empty:before {
+        content: none;
+      }
+    }
+
+    h2 {
+      font-size: 22px;
+      line-height: 1;
+      text-align: left;
+      color: #000000;
+      padding: 40px 0;
+      font-weight: 500;
+    }
+  }
+}

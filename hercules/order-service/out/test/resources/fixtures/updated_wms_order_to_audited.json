@@ -1,0 +1,20 @@
+{
+  "status" : "Audited",
+  "chargingRules": [
+    {
+      "quantityFrom": 0,
+      "quantityTo": 100,
+      "unitPrice": 0.28
+    },
+    {
+      "quantityFrom": 100,
+      "quantityTo": 200,
+      "unitPrice": 0.15
+    }
+  ],
+  "currency": "CNY",
+  "approvedPrice": 1234,
+  "effectiveFrom": "2017-11-11",
+  "effectiveTo": "2017-11-16",
+  "enterpriseShortName":"Thoughtworks"
+}

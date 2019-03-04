@@ -1,0 +1,83 @@
+@import "../../../../styles/variables";
+
+.login {
+  background: url("../../User/LoginContainer/assets/bg.jpg") center no-repeat;
+  background-size: 100% 100%;
+  min-height: calc(100vh - 464px);
+  position: relative;
+  height: 480px;
+
+  .captcha-code {
+    width: 50%;
+  }
+
+  .captcha-image {
+    width: 98px;
+    height: 40px;
+    margin-left: 20px;
+    vertical-align: top;
+  }
+
+  .captcha-refresh {
+    float: right;
+    background-image: url("../../User/LoginContainer/assets/refresh.svg");
+    width: 23px;
+    height: 23px;
+    margin-right: 8px;
+    margin-top: 8px;
+    cursor: pointer;
+  }
+
+  .error-message {
+    float: left;
+    color: #3441f0;
+    margin-top: -10px;
+  }
+
+  form {
+    margin-left: 5%;
+    position: absolute;
+    top: 50%;
+    margin-top: -180px;
+    width: 380px;
+    height: 360px;
+    opacity: 0.9;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px 0 rgba(219, 217, 219, 0.99);
+    padding: 25px;
+
+    h3 {
+      font-size: 16px;
+      text-align: center;
+      color: #959495;
+      line-height: 0.88;
+      margin-bottom: 20px;
+    }
+
+    input {
+      width: 330px;
+      background-color: #fcfcfc;
+      height: 40px;
+      border: solid 1px rgba(219, 217, 219, 0.99);
+      outline: none;
+      line-height: 1;
+      text-align: left;
+      color: #959495;
+      padding: 0 12px;
+      vertical-align: top;
+    }
+
+    button {
+      width: 330px;
+    }
+
+    a {
+      margin-top: -10px;
+      display: block;
+      float: right;
+      line-height: 1;
+      color: #959495;
+      text-decoration: none;
+    }
+  }
+}

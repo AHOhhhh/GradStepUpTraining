@@ -1,0 +1,15 @@
+{
+  "payRequestIds": ["851643e9-440e-48f2-bad2-7108b7ad1887"],
+  "payAmount": 1234,
+  "orderId": "47403444415059",
+  "currencyCode": "CNY",
+  "businessType": "WMS",
+  "payCustId": "3fa964b8-83e5-46be-a954-7303a63458be",
+  "payCustName": "xiaohong4",
+  "depositBank": "工商银行",
+  "collectionAccountName": "订单收款账户",
+  "collectionAccountNumber": "6551123133463024134023523",
+  "bankTransactionNumber": "121743289174891",
+  "bankTransactionTime": "122322354",
+  "comment": "备注文字"
+}

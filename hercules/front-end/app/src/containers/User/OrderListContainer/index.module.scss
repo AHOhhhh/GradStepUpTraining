@@ -1,0 +1,232 @@
+@import "../../../../styles/variables";
+
+$container-padding: 20px;
+
+.enterprise-user-orders :global {
+  .card-container {
+    border-radius: 5px;
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+    background: $content-background-color;
+    h2 {
+      padding: 30px;
+      font-weight: 700;
+      font-size: 18px;
+    }
+
+    table {
+      th:last-child {
+        width: 120px;
+      }
+
+      .operation {
+        white-space: nowrap;
+        width: 200px;
+      }
+    }
+
+    .ant-table-thead > tr, .ant-table-tbody > tr {
+      th:first-child {
+        padding-left: $container-padding;
+      }
+      th:last-child {
+        padding-right: $container-padding;
+      }
+      td:first-child {
+        padding-left: $container-padding;
+      }
+      td:last-child {
+        padding-right: $container-padding;
+      }
+    }
+
+    :global {
+      .ant-tabs.ant-tabs-top.ant-tabs-card.ant-tabs-no-animation {
+        height: fit-content;
+      }
+
+      .ant-tabs-card {
+        .ant-tabs-content {
+          margin-top: -16px;
+          .ant-tabs-tabpane {
+            background: $content-background-color;
+            padding: 16px;
+          }
+          .ant-table-wrapper {
+            .ant-table-thead > tr > th, .ant-table-tbody > tr > td {
+              &:not(:first-child) {
+                min-width: 77px;
+              }
+
+              &:first-child {
+                span {
+                  a {
+                    margin-left: 0;
+                  }
+                }
+              }
+
+              &:nth-child(2) {
+                position: relative;
+                max-width: 80px;
+                .order-id {
+                  white-space: nowrap;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                }
+                .refer-icon {
+                  position: absolute;
+                  left: 30px;
+                  bottom: -$icon-size / 2;
+                  width: $icon-size;
+                  height: $icon-size;
+                  background: transparent url("../../shared/assets/reference-icon.svg") no-repeat;
+                  background-size: cover;
+                  z-index: 2;
+                }
+              }
+
+              &:nth-child(4) {
+                word-break: break-word;
+                min-width: 90px;
+              }
+
+              .ant-table-row-expand-icon {
+                border: none;
+                background-color: transparent;
+              }
+
+              .ant-table-row-collapsed:after {
+                content: "\E61D";
+                vertical-align: middle;
+                font-family: "anticon";
+              }
+              .ant-table-row-expanded:after {
+                content: "\E61E";
+                vertical-align: middle;
+                font-family: "anticon";
+              }
+            }
+            .ant-table-tbody > tr:hover > td {
+              background: #FBFBFB;
+            }
+          }
+        }
+        .ant-tabs-bar {
+          .ant-tabs-tab {
+            border-color: transparent;
+            background: transparent;
+          }
+          .ant-tabs-tab-active {
+            border-bottom: 3px solid $link-hover-color;
+            padding-bottom: 1px;
+          }
+          .ant-tabs-nav-container {
+            padding-left: 20px;
+          }
+        }
+      }
+
+      .ant-select-selection {
+        border-radius: 4px;
+      }
+    }
+  }
+
+  .hide {
+    display: none;
+  }
+
+  .label {
+    float: right;
+    margin-top: 20px;
+    label {
+      margin-right: 10px;
+    }
+    &:after {
+      clear: right;
+    }
+  }
+
+  .red-button {
+    background: #4f4fdf;
+    color: #ffffff;
+    padding: 5px 10px;
+    box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.12);
+
+    width: 66px;
+    height: 27px;
+    border-radius: 5px;
+  }
+
+  .cancel-button {
+    height: 16px;
+    color: #000000;
+    margin-left: 10px;
+    padding-left: 10px;
+    border-left: 2px solid #000000;
+  }
+
+  .left-margin {
+    margin-left: 10px;
+  }
+
+  .tag {
+    color: $light-blue;
+    padding: 2px 10px;
+    border-radius: 4px;
+    border: 1px solid $light-blue;
+    display: inline-block;
+    margin: 5px 2px;
+  }
+
+  .tag-pick-up {
+    color: $tag-green;
+    border: solid 1px $tag-green;
+  }
+
+  .tag-drop-off {
+    color: $tag-purple;
+    border: solid 1px $tag-purple;
+  }
+
+}
+
+:global {
+  .cancel-order-modal {
+    .ant-modal {
+      height: 342px;
+      .ant-modal-header {
+        .ant-modal-title {
+          color: #000000;
+          height: 30px;
+          line-height: 1.5;
+        }
+      }
+      .ant-modal-footer {
+        padding-bottom: 48px;
+      }
+    }
+    .ant-modal-content {
+      .cancel-info {
+        text-align: center;
+        margin: 16px auto;
+        width: 393px;
+        font-size: 22px;
+        line-height: 1.5;
+        color: #000000;
+        span {
+          color: $highlight-orange;
+        }
+      }
+      .cancel-order-id {
+        opacity: 0.5;
+        text-align: center;
+        margin: 0 auto 22px auto;
+        height: 33px;
+        line-height: 2.36;
+      }
+    }
+  }
+}

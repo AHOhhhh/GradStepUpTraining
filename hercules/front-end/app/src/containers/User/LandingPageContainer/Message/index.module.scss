@@ -1,0 +1,20 @@
+.message{
+  padding: 30px 30px 12px 30px;
+  background-color: #fbfbfb;
+  margin-bottom: 40px;
+  border-radius: 4px;
+
+  .message-head{
+    font-size: 20px;
+    color: rgba(0,0,0,0.5);
+    margin-bottom:24px;
+    .message-icon{
+      height:35px;
+      vertical-align: middle;
+      margin-right: 15px;
+    }
+  }
+  .message-body{
+    color:black;
+  }
+}

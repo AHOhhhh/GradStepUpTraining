@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>表单模板</title>
+  <style>
+    table {
+      width: 600px;
+      margin: 50px auto;
+    }
+    .title{
+      width: 200px;
+      text-align: left;
+    }
+  </style>
+</head>
+
+<body>
+  <form>
+    <table>
+      <tr>
+        <td class="title">账号：</td>
+        <td class="content"> <input type="number" placeholder="请输入想注册的账号"> </td>
+      </tr>
+      <tr>
+        <td class="title">密码：</td>
+        <td class="content"><input type="password" placeholder="请设置您账号的登入密码"> </td>
+      </tr>
+      <tr>
+        <td class="title">重复密码：</td>
+        <td class="content"><input type="password" placeholder="再次输入密码"></td>
+      </tr>
+      <tr>
+        <td class="title">验证码：</td>
+        <td class="content"><input type="number" placeholder="请输入六位验证码"> </td>
+      </tr>
+      <tr>
+        <td class="title">性别：</td>
+        <td class="content"><input type="radio" name="sex">男 <input type="radio" name="sex">男女</td>
+      </tr>
+      <tr>
+        <td class="title">玩过什么游戏：</td>
+        <td class="content"><input type="checkbox" name="games">英雄联盟<input type="checkbox" name="games">穿越火线<input type="checkbox" name="games">魔兽世界<input type="checkbox" name="games">守望先锋</td>
+      </tr>
+      <tr>
+        <td class="title"><select >
+          <option selected disabled >请输入</option>
+          <option >年</option>
+          <option >月</option>
+          <option >日</option>
+        </select> </td>
+       
+      </tr>
+      <tr>
+        <td class="title">
+          <button>按钮</button>
+          <button type="submit">提交</button>
+          <button type="reset">重置</button>
+        </td>
+       
+      </tr>
+    </table>
+
+  </form>
+</body>
+
+</html>

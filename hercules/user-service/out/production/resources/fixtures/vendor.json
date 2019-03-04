@@ -1,0 +1,26 @@
+[
+  {
+    "id": "wms",
+    "name": "海平线WMS",
+    "businessType": "wms",
+    "payMethods": "ONLINE,OFFLINE,DEFERMENT"
+  },
+  {
+    "id": "mwp",
+    "name": "智慧口岸",
+    "businessType": "mwp",
+    "payMethods": "ONLINE,OFFLINE,DEFERMENT"
+  },
+  {
+    "id": "yzra",
+    "name": "扬子江航空",
+    "businessType": "acg",
+    "payMethods": "ONLINE,OFFLINE,DEFERMENT"
+  },
+  {
+    "id": "ltp",
+    "name": "大道物流",
+    "businessType": "ltp",
+    "payMethods": "ONLINE,OFFLINE,DEFERMENT"
+  }
+]

@@ -1,0 +1,55 @@
+@import 'variables';
+
+.container {
+  width: $page-width;
+  min-width: $page-width;
+  max-width: $page-width;
+  margin: 0 auto;
+}
+
+.user-container {
+  position: relative;
+  margin: 30px auto 80px;
+  width: $page-width;
+  min-width: $page-width;
+  max-width: $page-width;
+  min-height: 600px;
+
+  h2 {
+    padding: 30px;
+    font-weight: 700;
+    font-size: 18px;
+  }
+
+  .right-container {
+    background-color: #ffffff;
+    border-radius: 5px;
+    h2 {
+      margin-bottom: 8px;
+      padding: 30px 25px;
+    }
+  }
+}
+
+.scf-container,
+.admin-container,
+.wise-port-container {
+  width: $page-width;
+  margin: 0 auto;
+
+  .stepper-container {
+    padding: 50px 0;
+  }
+
+  .main-section {
+    margin-right: 20px;
+    display: inline-block;
+    vertical-align: top;
+    width: 910px;
+  }
+
+  .right-side-bar {
+    display: inline-block;
+    width: 270px;
+  }
+}

@@ -1,0 +1,18 @@
+[
+  {
+    "country": "中国大陆",
+    "code": "CN"
+  },
+  {
+    "country": "香港",
+    "code": "HK"
+  },
+  {
+    "country": "澳门",
+    "code": "MO"
+  },
+  {
+    "country": "台湾",
+    "code": "TW"
+  }
+]

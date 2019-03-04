@@ -1,0 +1,107 @@
+swagger: '2.0'
+info:
+  version: 1.0.0
+  title: HNA WebAPI
+  license:
+    name: MIT
+host: dev.hlp.fun
+basePath: /webapi
+schemes:
+  - http
+consumes:
+  - application/json
+produces:
+  - application/json
+paths:
+  '/wise-port/orders/{orderId}':
+    get:
+      summary: Info for a specific order
+      operationId: getOrderById
+      tags:
+        - orders
+      parameters:
+        - name: orderId
+          in: path
+          required: true
+          description: The id of the order to retrieve
+          type: string
+      responses:
+        '200':
+          description: Expected response to a valid request
+          schema:
+            $ref: '#/definitions/Order'
+        default:
+          description: unexpected error
+          schema:
+            $ref: '#/definitions/Error'
+definitions:
+  Order:
+    type: object
+    properties:
+      id:
+        $ref: '#/definitions/positiveInt'
+      status:
+        type: string
+        pattern: submitted|selecting|waitingForPay
+      detail:
+        type: object
+        properties:
+          orderId:
+            $ref: '#/definitions/positiveInt'
+          requirement:
+            type: object
+            properties:
+              type:
+                type: string
+                pattern: 出口报关|过关报检|其他服务
+              port:
+                type: string
+                pattern: 上海|广州
+              superviseType:
+                type: string
+                pattern: 0110-一般贸易
+              travelType:
+                type: string
+                pattern: 航空运输
+              dueTo:
+                type: string
+                format: date-time
+              budget:
+                $ref: '#/definitions/budget'
+            required:
+              - type
+              - port
+              - superviseType
+              - travelType
+              - dueTo
+              - budget
+          description:
+            type: string
+            pattern: TP-LINK TL-WR886N 450M无线路由器
+        required:
+          - orderId
+          - requirement
+          - description
+    required:
+      - id
+      - detail
+      - status
+  Error:
+    required:
+      - code
+      - message
+    properties:
+      code:
+        type: integer
+        format: int32
+      message:
+        type: string
+  positiveInt:
+    type: integer
+    minimum: 0
+    exclusiveMinimum: true
+  budget:
+    type: number
+    minimum: 0
+    maximum: 10000
+    exclusiveMaximum: true

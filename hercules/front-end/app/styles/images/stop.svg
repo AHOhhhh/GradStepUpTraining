@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="34" height="34" viewBox="0 0 34 34">
+    <defs>
+        <path id="a" d="M5 4h30.52a3 3 0 0 1 2.121 5.121l-27.52 27.52A3 3 0 0 1 5 34.521V4z"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g transform="translate(-5 -4)">
+            <use fill="#DBD9DB" fill-opacity=".988" xlink:href="#a"/>
+            <path stroke="#DBD9DB" stroke-opacity=".988" d="M5.5 4.5v30.02a2.5 2.5 0 0 0 4.268 1.768l27.52-27.52A2.5 2.5 0 0 0 35.52 4.5H5.5z"/>
+        </g>
+        <text fill="#FFF" font-family="MicrosoftYaHei-Bold, Microsoft YaHei" font-size="12" font-weight="bold" transform="rotate(-45 10.172 21.036)">
+            <tspan x="5.5" y="20">停用</tspan>
+        </text>
+    </g>
+</svg>

@@ -1,0 +1,22 @@
+.joyride {
+  .joyride-hole {
+    border-radius: 100%;
+    transform: scale(1.2);
+  }
+
+  .joyride-tooltip {
+    background-color: transparent;
+    color: white;
+
+    .joyride-tooltip__main {
+      border: 1px solid white;
+      border-radius: 3px;
+      padding: 10px 20px;
+    }
+
+    .joyride-tooltip__button {
+      display: none;
+    }
+  }
+}
+

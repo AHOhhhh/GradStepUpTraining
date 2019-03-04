@@ -1,0 +1,5 @@
+rootProject.name = 'order-service'
+
+if (System.getenv('GO_PIPELINE_NAME')){
+    rootProject.name = System.getenv('GO_PIPELINE_NAME')
+}

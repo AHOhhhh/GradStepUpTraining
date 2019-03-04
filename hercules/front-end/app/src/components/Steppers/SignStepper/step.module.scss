@@ -1,0 +1,76 @@
+@import "../../../../styles/colors";
+
+.step {
+  line-height: 1.5;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+
+  .icon {
+    display: inline-block;
+    background-image: url("./images/wait.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    z-index: 1;
+    width: 18px;
+    height: 18px;
+    right: 50%;
+  }
+
+  .title {
+    font-family: Arial;
+    margin-top: 20px;
+  }
+
+  &:before {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    border-top: solid 2px rgba(219, 217, 219, 0.99);
+    position: absolute;
+    top: 8px;
+    left: 0;
+  }
+
+  &:first-child {
+    &:before {
+      width: 50%;
+      right: 0;
+      left: auto;
+    }
+  }
+
+  &:last-child {
+    &:before {
+      width: 50%;
+      left: 0;
+    }
+  }
+
+  &.wait {
+    .icon {
+      width: 8px;
+      height: 8px;
+      top: 5px;
+    }
+  }
+  &.process {
+    color: $meta-title-color;
+    &:before {
+      border-color: $meta-title-color;
+    }
+    .icon {
+      background-image: url("./images/process.svg");
+    }
+  }
+  &.finish {
+    color: $meta-title-color;
+    &:before {
+      border-color: $meta-title-color;
+    }
+    .icon {
+      background-image: url("./images/finish.svg");
+    }
+  }
+}

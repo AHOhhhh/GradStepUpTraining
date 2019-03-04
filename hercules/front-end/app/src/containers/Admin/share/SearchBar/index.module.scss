@@ -1,0 +1,13 @@
+.fundsSearchBar :global {
+  padding: 0 25px 40px;
+
+  .search {
+    float: right;
+
+    input {
+      padding-left: 12px;
+      border-radius: 4px;
+      width: 267px;
+    }
+  }
+}

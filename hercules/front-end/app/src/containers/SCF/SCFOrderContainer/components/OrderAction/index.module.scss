@@ -1,0 +1,31 @@
+@import "../../../../../../styles/variables";
+
+.action-container {
+  margin-bottom: 4px;
+  padding: 40px 0;
+  text-align: center;
+  background-color: #fff;
+  border: solid 1px $border-gray;
+  border-radius: 4px;
+
+  a {
+    display: inline-block;
+    padding: 15px 36px;
+    font-size: 18px;
+    color: $navigation-background-color;
+    background-color: #fff;
+    border: 1px solid $navigation-background-color;
+    border-radius: 4px;
+    min-width: 180px;
+  }
+
+  p {
+    margin-top: 20px;
+    color: $label-gray;
+  }
+}
+
+.pure-container {
+  @extend .action-container;
+  padding: 60px 0;
+}

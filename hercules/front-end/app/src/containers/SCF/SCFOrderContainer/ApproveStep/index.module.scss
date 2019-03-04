@@ -1,0 +1,40 @@
+@import "../../../../../styles/variables";
+
+$image-size: 50px;
+
+.container {
+  padding: 175px 0;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 1px 4px 1px rgba(233, 233, 233, 0.5);
+
+  .message {
+    height: $image-size;
+    p {
+      display: inline-block;
+      vertical-align: top;
+      line-height: $image-size;
+      font-size: 22px;
+      color: #000;
+    }
+
+    img {
+      margin-right: 20px;
+      width: $image-size;
+      height: $image-size;
+    }
+  }
+
+  .tip {
+    margin-top: 60px;
+    user-select: none;
+
+    a {
+      color: $content-blue;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

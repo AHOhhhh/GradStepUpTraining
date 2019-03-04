@@ -1,0 +1,56 @@
+.upload {
+  margin-right: 20px;
+  display: inline-block;
+  height: 27px;
+  vertical-align: top;
+  .btn {
+    background-color: #ffffff;
+    color: #4f4fdf;
+    width: 66px;
+    height: 27px;
+    border-radius: 5px;
+    box-shadow: 0 2px 7px 0 rgba(0, 0, 0, 0.08);
+    border: solid 1px #4f4fdf;
+  }
+}
+
+.modalContainer {
+  min-height: 206px;
+  text-align: center;
+  .title {
+    font-size: 20px;
+    margin: 37px auto 21px auto;
+    color: #000000;
+    img {
+      display: inline-block;
+      vertical-align: top;
+      margin-right: 10px;
+    }
+  }
+
+  .messageContainer {
+    font-size: 12px;
+    max-height: 200px;
+    overflow-y: auto;
+    word-wrap: break-word;
+    padding: 0 10px;
+    margin: auto;
+    .message {
+      margin: 10px 0;
+    }
+  }
+
+  .close {
+    margin: 26px auto 40px auto;
+    width: 140px;
+    height: 40px;
+    border-radius: 4px;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #4f4fdf;
+    border: solid 1px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.12);
+  }
+}
+
+

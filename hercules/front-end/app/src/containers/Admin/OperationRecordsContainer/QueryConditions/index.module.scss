@@ -1,0 +1,44 @@
+.query-conditions {
+  position: absolute;
+  top: 133px;
+  width: 960px;
+  margin-left: 20px;
+
+  .date-range {
+    display: inline-block;
+    width: 344px;
+  }
+
+  .search-box {
+    display: inline-block;
+  }
+}
+
+.query-conditions :global {
+
+  .ant-form-item{
+    margin-right: 0;
+
+    &:nth-last-child(1) {
+      width: calc(100% - 344px);
+
+      .ant-form-item-control-wrapper {
+        float: right;
+      }
+    }
+  }
+
+  .ant-input-search, .ant-calendar-picker-input {
+    input {
+      border-radius: 4px;
+    }
+  }
+
+  .ant-input-search {
+    width: 180px;
+  }
+
+  .ant-calendar-range-picker-separator {
+    vertical-align: middle;
+  }
+}

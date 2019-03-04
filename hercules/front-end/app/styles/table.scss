@@ -1,0 +1,46 @@
+@import "./colors";
+@import "./tables/user-landing-page-enterprise-user-list";
+
+$table-main-line-color: #dbd9db;
+$table-head-background-color: #efefef;
+$table-td-border: 1px solid $table-main-line-color;
+$table-disable-font-color: #cac9ca;
+
+.ant-table {
+  font-size: 12px;
+  border-radius: 0;
+  table {
+    tbody {
+      tr {
+        td {
+          .red-button {
+            background: $navigation-background-color;
+            color: #ffffff;
+            padding: 5px 10px;
+            box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.12);
+            width: 66px;
+            height: 27px;
+            border-radius: 5px;
+            line-height: 30px;
+          }
+
+          .divider {
+            width: 10px;
+            display: inline-block;
+          }
+        }
+        &.disabled {
+          color: $table-disable-font-color;
+          td:first-child {
+            min-width: 100px;
+            background-image: url(./images/stop.svg);
+            background-position: top left;
+            background-repeat: no-repeat;
+            background-size: 35px;
+          }
+        }
+      }
+    }
+  }
+}
+

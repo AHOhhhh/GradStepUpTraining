@@ -1,0 +1,37 @@
+version: "3"
+
+networks:
+  service:
+
+services:
+  mysql:
+    image: nexus-release.hercules.fun/hercules/mysql
+    deploy:
+      placement:
+        constraints:
+          - node.role == worker
+      replicas: 1
+      restart_policy:
+        delay: 10s
+    networks:
+      service:
+        aliases:
+          - mysql
+    ports:
+      - "3306:3306"
+  @@SERVICE@@:
+    image: nexus-release.hercules.fun/hercules/@@SERVICE@@:@@VERSION@@
+    deploy:
+      replicas: 1
+      restart_policy:
+        delay: 10s
+    depends_on:
+      - mysql
+    networks:
+      service:
+        aliases:
+          - @@SERVICE@@
+    ports:
+      - "8001:8001"
+    environment:
+      - SPRING_PROFILES_ACTIVE=prod

@@ -1,0 +1,86 @@
+@import "../../../../../../../styles/colors";
+
+$table-main-line-color: #dbd9db;
+$basic-font-size: 14px;
+
+.item-container {
+  font-size: $basic-font-size;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  border: solid 1px #dcdcdc;
+  border-left: solid 5px rgb(83, 82,222);
+  padding: 20px 30px 10px;
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0 2px 8px 1px $table-main-line-color;
+    background-color: $hover-background-color;
+  }
+
+  @mixin section($color) {
+    display: inline-block;
+    color: $color;
+  }
+
+  .title {
+    line-height: 30px;
+    vertical-align: middle;
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.7)
+  }
+
+  .order-location {
+    @include section(rgba(0, 0, 0, 0.5));
+  }
+
+  .order-type {
+    @include section(#fbfbfb);
+    text-align: center;
+    margin-right: 10px;
+    height: 22px;
+    border-radius: 3px;
+    padding: 2px 7px;
+    background-color: #23a6f5;
+  }
+
+  @mixin order-detail($color) {
+    @include section($color);
+    margin-top: 5px;
+    float: right;
+  }
+
+  .order-status {
+    @include order-detail(rgb(83, 82, 222));
+  }
+
+  .order-id {
+    @include order-detail(rgba(0, 0, 0, 0.7));
+    text-align: right;
+  }
+
+  .description {
+    &.logistics-description {
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      width: 681px;
+    }
+    color: rgba(0, 0, 0, 0.7);
+  }
+
+  .offer-types {
+    font-size: 12px;
+    .date {
+      color: rgba(0, 0, 0, 0.5);
+      float: right;
+    }
+  }
+
+  :global .ant-row {
+    margin-bottom: 10px;
+  }
+}
+

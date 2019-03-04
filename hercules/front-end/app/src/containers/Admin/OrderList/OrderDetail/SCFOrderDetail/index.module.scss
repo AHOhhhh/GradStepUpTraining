@@ -1,0 +1,31 @@
+.scf-order-detail {
+  display: table;
+  width: 100%;
+  padding: 10px 0;
+
+  .basis-info, .requirement-info, .size-info, .purpose-info{
+    background-color: transparent;
+    display: table-cell;
+    min-width: 210px;
+    vertical-align: top;
+  }
+
+  .labeled-text {
+    margin: 6px 8px;
+
+    .label {
+      color: #b2b2b2;
+      display: inline-block;
+      width: 62px;
+      word-break: keep-all;
+      vertical-align: top;
+    }
+
+    .secondary {
+      vertical-align: top;
+      display: inline-block;
+      max-width: calc(100% - 62px);
+      color: #000000;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.offer-detail {
+  text-align: right;
+  line-height: 1.5;
+  position: relative;
+
+  .other-expenses {
+    opacity: 0.5;
+    font-size: 12px;
+  }
+
+  .offer-detail__button{
+    color: #4f4fdf;
+  }
+
+  .offer-detail__span {
+    line-height: 1.5;
+    .offer-detail__total {
+      height: 26px;
+      font-size: 20px;
+    }
+
+    .offer-detail__price {
+      height: 37px;
+      font-size: 28px;
+      font-weight: bold;
+    }
+  }
+}

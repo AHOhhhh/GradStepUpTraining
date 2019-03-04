@@ -1,0 +1,98 @@
+{
+  "orderId": "131712061959402289063636",
+  "goods": [
+    {
+      "name": "TP-Link TL-WR886N 450M 无线路由器",
+      "size": {
+        "length": 1.00,
+        "width": 2.00,
+        "height": 3.00,
+        "unit": "m"
+      },
+      "weight": {
+        "value": 100.80,
+        "unit": "kg"
+      },
+      "price": 1500.00,
+      "quantity": 5,
+      "packageQuantity": 20,
+      "declarationInfo": "货物是易碎品,不能压碰"
+    }
+  ],
+  "currency": "CNY",
+  "shippingInfo": {
+    "id": 12345,
+    "departure": {
+      "airportId": "PEK",
+      "delivery": true,
+      "airportName": "name1"
+    },
+    "arrival": {
+      "airportId": "SHA",
+      "delivery": true,
+      "airportName": "name2"
+    },
+    "pickUpAddress": {
+      "id": "123",
+      "name": "张三",
+      "telephone": "021-68668432",
+      "cellphone": "+86 13690012223",
+      "email": "a@b.com",
+      "countryAbbr": "CN",
+      "country": "中国",
+      "provinceId": "310000",
+      "province": "上海市",
+      "cityId": "310100",
+      "city": "上海市",
+      "districtId": "310106",
+      "district": "静安区",
+      "address": "上海市静安区新闸路1124弄",
+      "postcode": "710000"
+    },
+    "dropOffAddress": {
+      "id": "456",
+      "name": "李四",
+      "telephone": "010-68634531",
+      "cellphone": "+86 13812012223",
+      "email": "a@b.com",
+      "countryAbbr": "CN",
+      "country": "中国",
+      "provinceId": "110000",
+      "province": "北京",
+      "cityId": "110100",
+      "city": "北京",
+      "districtId": "110108",
+      "district": "海淀区",
+      "address": "北京市海淀区王庄路清华同方科技广场D座东楼6层",
+      "postcode": "710000"
+    },
+    "estimatedDeliveryTime": "2017-08-14 12:17"
+  },
+  "contact": {
+    "name": "李四",
+    "telephone": "010-68634531",
+    "cellphone": "+86 13812012223",
+    "email": "a@b.com",
+    "countryAbbr": "CN",
+    "country": "中国",
+    "provinceId": "110000",
+    "province": "北京",
+    "cityId": "110100",
+    "city": "北京",
+    "districtId": "110108",
+    "district": "海淀区",
+    "address": "北京市海淀区王庄路清华同方科技广场D座东楼6层",
+    "postcode": "710000"
+  },
+  "price": {
+    "airlineFee": 4000.00,
+    "pickUpFee": 500.00,
+    "dropOffFee": 300.00,
+    "total": 4800.00
+  },
+  "userId": "123",
+  "userRole": "User",
+  "enterpriseId": "001",
+  "status": "Submitted",
+  "vendor": "yzra"
+}

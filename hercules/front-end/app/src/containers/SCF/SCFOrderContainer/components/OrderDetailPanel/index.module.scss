@@ -1,0 +1,44 @@
+.container {
+  background-color: #ffffff;
+  padding: 32px 19px;
+  box-shadow: 0 1px 4px 1px rgba(233, 233, 233, 0.5);
+  border-radius: 4px;
+  font-size: 14px;
+
+  .title {
+    .label {
+      text-align: right;
+      color: #686767;
+      font-size: 16px;
+    }
+
+    .text {
+      color: #000;
+      word-warp: break-word;
+      word-break: break-all;
+    }
+  }
+
+  .section {
+
+    .detail {
+      padding-bottom: 12px;
+      .label {
+        text-align: right;
+        color: #686767;;
+      }
+
+      .text {
+        color: #000000;
+        word-warp: break-word;
+        word-break: break-all;
+      }
+    }
+  }
+
+  hr {
+    margin: 24px 0px;
+    opacity: 0.7;
+    border: solid 1px #e9e9e9;
+  }
+}

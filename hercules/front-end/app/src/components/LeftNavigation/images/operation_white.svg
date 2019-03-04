@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="22px" viewBox="0 0 22 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.1 (47250) - http://www.bohemiancoding.com/sketch -->
+    <title>操作记录2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="21.4726701%" y1="85.1357992%" x2="89.8525103%" y2="6.18432495%" id="linearGradient-1">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.174394248" offset="20.8805006%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0.250622736" offset="100%"></stop>
+        </linearGradient>
+        <path d="M0,11.975304 L0,2.4000001 C-1.62324907e-16,1.07451664 1.07451664,2.4348736e-16 2.4000001,0 L13.5999999,0 C14.9254834,-2.4348736e-16 16,1.07451664 16,2.4000001 L16,14.5999999 C16,15.9254834 14.9254834,17 13.5999999,17 L5.99221686,17" id="path-2"></path>
+    </defs>
+    <g id="企业用户界面ICON" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-304.000000, -569.000000)">
+        <g id="Group-2" transform="translate(307.000000, 572.000000)">
+            <g id="Rectangle-2">
+                <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                <path stroke="#FEFEFE" stroke-width="1" d="M0.5,11.7420497 L6.17410849,16.5 L13.5999999,16.5 C14.649341,16.5 15.5,15.649341 15.5,14.5999999 L15.5,2.4000001 C15.5,1.35065902 14.649341,0.5 13.5999999,0.5 L2.4000001,0.5 C1.35065902,0.5 0.5,1.35065902 0.5,2.4000001 L0.5,11.7420497 Z"></path>
+            </g>
+            <circle id="Oval-12" stroke="#FEFEFE" cx="8.5" cy="9.5" r="3"></circle>
+            <path d="M6.05206098,11.947939 L2.95931524,15.0406848" id="Line" stroke="#FEFEFE" stroke-linecap="round"></path>
+            <path d="M0.576923077,3.5 L15.5,3.5" id="Line" stroke="#FEFEFE" stroke-linecap="square"></path>
+            <path d="M4.5,3.5 L4.5,0.5" id="Line-Copy-26" stroke="#FEFEFE" stroke-linecap="square"></path>
+        </g>
+    </g>
+</svg>

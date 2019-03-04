@@ -1,0 +1,51 @@
+{
+  "orderId": "131712061959402289063636",
+  "fromAirportCode": "PEK",
+  "toAirportCode": "SHA",
+  "fromAddress": {
+    "name": "张三",
+    "mobile": "021-68668432",
+    "phone": "+86 13690012223",
+    "email": "a@b.com",
+    "companyName": "",
+    "postcode": "710000",
+    "country": "中国",
+    "abbr": "CN",
+    "province": "上海市",
+    "provinceId": "310000",
+    "city": "上海市",
+    "cityId": "310100",
+    "district": "静安区",
+    "districtId": "310106",
+    "address": "上海市静安区新闸路1124弄"
+  },
+  "toAddress": {
+    "name": "李四",
+    "mobile": "010-68634531",
+    "phone": "+86 13812012223",
+    "email": "a@b.com",
+    "companyName": "",
+    "postcode": "710000",
+    "country": "中国",
+    "abbr": "CN",
+    "province": "北京",
+    "provinceId": "110000",
+    "city": "北京",
+    "cityId": "110100",
+    "district": "海淀区",
+    "districtId": "110108",
+    "address": "北京市海淀区王庄路清华同方科技广场D座东楼6层"
+  },
+  "goodName": "TP-Link TL-WR886N 450M 无线路由器",
+  "goodWeight": 100.80,
+  "goodVolume": 6.000000,
+  "expectTakeoffTime": "2017-10-29T10:35:00+08:00",
+  "expectLandingTime": "2017-10-29T10:35:00+08:00",
+  "selectedServices": [
+    "city_start_airport_service",
+    "airline_service",
+    "city_end_airport_service",
+    "city_start_land_service",
+    "city_end_land_service"
+  ]
+}

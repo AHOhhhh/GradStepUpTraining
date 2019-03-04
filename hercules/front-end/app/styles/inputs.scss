@@ -1,0 +1,48 @@
+@import "variables";
+
+input {
+  &.ant-input {
+    height: $input-height;
+    background-color: #fcfcfc;
+    outline: none;
+    line-height: 1.2;
+    text-align: left;
+    color: #959495;
+    padding: 0 32px 0 12px;
+    border-radius: 0;
+
+    &:focus {
+      border-color: $meta-title-color;
+      box-shadow: 0 0 0 2px rgba(249, 163, 0, .2);
+    }
+    &:hover {
+      border-color: $meta-title-color;
+    }
+  }
+}
+
+textarea {
+  &.ant-input {
+    border-radius: 0;
+
+    &:focus {
+      border-color: $meta-title-color;
+      box-shadow: 0 0 0 2px rgba(249, 163, 0, .2);
+    }
+    &:hover {
+      border-color: $meta-title-color;
+    }
+  }
+}
+
+.has-feedback {
+  &.has-error, &.has-success {
+    &:after {
+      line-height: $input-height;
+    }
+  }
+}
+
+input.ant-input {
+  padding: 0 12px 0 12px;
+}

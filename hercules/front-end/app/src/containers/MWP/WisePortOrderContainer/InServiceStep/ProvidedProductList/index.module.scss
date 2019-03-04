@@ -1,0 +1,48 @@
+@import "../../../../../../styles/colors";
+
+.provided-product-list {
+  .tag-provided-type {
+    display: inline-block;
+    margin: 15px 0px;
+    border: 1px solid $dark-gray;
+    border-radius: 3px;
+    padding: 1px 8px;
+
+    &.clearance {
+      border-color: $tag-green;
+      color: $tag-green;
+    }
+    &.inspection {
+      border-color: $tag-green;
+      color: $tag-green;
+    }
+    &.agent {
+      border-color: $meta-title-color;
+      color: $meta-title-color;
+    }
+  }
+}
+
+// reset antd table style
+.provided-product-list :global {
+  .ant-table-thead > tr > th {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    font-size: 12px;
+  }
+
+  .ant-table-tbody > tr {
+    &:last-child {
+      > td {
+        border-bottom: none;
+      }
+    }
+
+    & > td {
+      padding-top: 25px;
+      padding-bottom: 25px;
+      border-bottom-style: dashed;
+    }
+  }
+}

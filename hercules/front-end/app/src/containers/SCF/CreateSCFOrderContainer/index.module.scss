@@ -1,0 +1,106 @@
+@import "../../../../styles/variables";
+
+.create-order {
+  margin: 0 auto;
+  width: 1200px;
+  $tips-height: 78px;
+  padding: 32px;
+
+  .title {
+    font-size: 32px;
+    text-align: left;
+    margin: 32px 0;
+  }
+
+  .select {
+    width: 340px;
+  }
+
+  form {
+    label {
+      line-height: 40px;
+      font-size: 16px;
+      color: #000000;
+      padding-right: 15px;
+    }
+    span {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    input {
+      width: 340px;
+    }
+    textarea {
+      width: 340px;
+    }
+
+    :global .ant-calendar-picker {
+      width: 340px;
+    }
+  }
+
+  .input {
+    width: 340px;
+  }
+
+  .input-unit {
+    font-size: 16px;
+    margin-left: 10px;
+  }
+
+  .label {
+    min-width: 100px;
+    text-align: right;
+    margin-right: 20px;
+    opacity: 0.5;
+    vertical-align: top;
+  }
+
+  .value {
+    max-width: 200px;
+  }
+
+  .left-content {
+    padding-left: 180px;
+  }
+
+  .operate {
+    .button {
+      height: 40px;
+      color: $font-light-gray;
+
+      &.primary {
+        color: $content-background-color;
+      }
+    }
+  }
+}
+
+.auth-modal {
+  padding: 30px 40px;
+
+  .tip-text {
+    display: inline-block;
+    font-size: 20px;
+    margin: -30px 0 30px 45px;
+  }
+
+  .button-group {
+    text-align: center;
+
+    button {
+      width: 106px;
+      height: 30px;
+      margin-right: 20px;
+    }
+
+    button:first-child {
+      color: #646464;
+    }
+  }
+
+  .error-icon {
+    font-size: 22px;
+    color: #4f4fdf;
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "type": "object",
+  "properties": {
+    "id": {
+      "$ref": "#/definitions/positiveInt"
+    },
+    "detail": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "$ref": "#/definitions/positiveInt"
+        },
+        "requirement": {
+          "type": "object",
+          "properties": {
+            "type": {
+              "type": "string",
+              "pattern": "出口报关|过关报检|其他服务"
+            },
+            "port": {
+              "type": "string",
+              "pattern": "上海|广州"
+            },
+            "superviseType": {
+              "type": "string",
+              "pattern": "0110-一般贸易"
+            },
+            "travelType": {
+              "type": "string",
+              "pattern": "航空运输"
+            },
+            "dueTo": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "budget": {
+              "$ref": "#/definitions/budget"
+            }
+          },
+          "required": [
+            "type",
+            "port",
+            "superviseType",
+            "travelType",
+            "dueTo",
+            "budget"
+          ]
+        },
+        "status": {
+          "type": "string",
+          "pattern": "TenderOffer"
+        },
+        "contact": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string",
+              "pattern": "豆青|张天"
+            },
+            "address": {
+              "type": "string",
+              "pattern": "陕西省西安市"
+            },
+            "mobile": {
+              "type": "string",
+              "pattern": "1578237283|3728114738129"
+            },
+            "telephone": {
+              "type": "string",
+              "pattern": "11338147|2344444442"
+            }
+          },
+          "required": [
+            "name",
+            "telephone",
+            "mobile",
+            "address"
+          ]
+        },
+        "description": {
+          "type": "string",
+          "pattern": "TP-LINK TL-WR886N 450M无线路由器"
+        }
+      },
+      "required": [
+        "orderId",
+        "requirement",
+        "description",
+        "status",
+        "contact"
+      ]
+    }
+  },
+  "required": [
+    "id",
+    "detail"
+  ],
+  "definitions": {
+    "positiveInt": {
+      "type": "integer",
+      "minimum": 0,
+      "exclusiveMinimum": true
+    },
+    "budget": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 10000,
+      "exclusiveMaximum": true
+    }
+  }
+}

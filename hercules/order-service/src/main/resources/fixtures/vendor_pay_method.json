@@ -1,0 +1,14 @@
+[
+  {
+    "id": "wms",
+    "name": "Hercules WMS",
+    "businessType": "wms",
+    "methods": "ONLINE, OFFLINE, DEFERMENT"
+  },
+  {
+    "id": "yzra",
+    "name": "大力神航空",
+    "businessType": "acg",
+    "methods": "ONLINE, OFFLINE, DEFERMENT"
+  }
+]

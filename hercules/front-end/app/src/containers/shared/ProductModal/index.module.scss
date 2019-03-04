@@ -1,0 +1,62 @@
+@import "../../../../styles/colors";
+
+.product-form {
+  padding: 10px 32px 32px 32px;
+
+  .select {
+    height: 40px;
+    width: 280px;
+  }
+
+  form {
+    label {
+      line-height: 40px;
+      font-size: 16px;
+      color: #000000;
+      padding-right: 15px;
+      opacity: 0.5;
+    }
+    input {
+      width: 280px;
+    }
+    textarea {
+      width: 280px;
+    }
+  }
+
+  .input-unit {
+    font-size: 16px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .price-input {
+    width: 200px;
+  }
+
+  .price-unit {
+    width: 80px;
+    position: absolute;
+    .ant-select-selection {
+      height: 40px;
+      border-radius: 0;
+    }
+  }
+
+  .button {
+    width: 106px;
+    margin: 0 8px;
+
+    &.cancel {
+      color: $font-light-gray;
+    }
+  }
+
+  .volume-input {
+    width: 69px;
+  }
+
+  .hide {
+    display: none;
+  }
+}

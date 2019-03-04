@@ -1,0 +1,90 @@
+@import "../../../../styles/variables";
+
+.signup {
+  $input-height: 40px;
+  padding-top: 20px;
+  font-family: $font-family;
+  margin: 22px 0;
+
+  .step-box {
+    background-color: $content-background-color;
+    height: 143px;
+    padding: 40px 180px;
+  }
+
+  .form-box {
+    background-color: $content-background-color;
+    height: 645px;
+    margin-top: 10px;
+    padding: 25px 20px;
+
+    .box-title {
+      font-size: 18px;
+      font-weight: bold;
+      text-align: left;
+    }
+
+    hr {
+      border: none;
+      border-top: solid 3px #f1f0f7;
+      margin: 8px 0 49px 0;
+    }
+
+    .row {
+      text-align: left;
+      padding-left: 239px;
+
+      .title {
+        display: inline-block;
+        width: 103px;
+        font-size: 16px;
+        line-height: $input-height;
+        text-align: right;
+        margin-right: 10px;
+
+        .required-icon {
+          color: $main-color;
+        }
+      }
+      input {
+        width: 330px;
+      }
+    }
+
+    .inline-box {
+      position: relative;
+      width: 330px;
+      display: inline-block;
+      vertical-align: top;
+      .row {
+        padding-left: 0;
+        text-align: right;
+      }
+
+      .title {
+        width: 70px;
+        line-height: $input-height;
+        text-align: left;
+        color: #959495;
+        font-size: 14px;
+      }
+
+      input {
+        width: 246px;
+      }
+    }
+
+    .operate {
+      margin-top: 16px;
+      padding-left: 350px;
+
+      .button {
+        margin-right: 17px;
+      }
+    }
+
+    .has-feedback::after {
+      line-height: $input-height;
+    }
+  }
+}

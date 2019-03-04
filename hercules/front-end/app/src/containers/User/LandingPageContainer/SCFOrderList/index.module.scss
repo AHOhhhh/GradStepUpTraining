@@ -1,0 +1,24 @@
+@import "../../../../../styles/variables";
+
+.list-container {
+  padding: 20px 30px;
+  background-color: #fbfbfb;
+  border-radius: 4px;
+
+  h2 {
+    margin-bottom: 20px;
+  }
+}
+
+.load-more {
+  text-align: center;
+  div{
+    color: rgba(0, 0, 0, 0.5);
+    width: 60px;
+    margin: auto;
+    cursor: pointer;
+  }
+  button, p {
+    font-size: 12px;
+  }
+}

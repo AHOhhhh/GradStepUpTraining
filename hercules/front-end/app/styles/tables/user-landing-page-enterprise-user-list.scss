@@ -1,0 +1,80 @@
+@import "../colors";
+
+$table-main-line-color: #dbd9db;
+$table-head-background-color: #efefef;
+$table-td-border: 1px solid $table-main-line-color;
+$table-disable-font-color: #cac9ca;
+
+.user-landing-page-enterprise-user-list {
+  margin-top: 10px;
+
+  .ant-table {
+    border-top: solid 3px $table-main-line-color;
+    border-radius: 0;
+    table {
+      border-spacing: 0 8px;
+      padding: 2px;
+
+      thead {
+        tr {
+          th {
+            text-align: center;
+            border-right: 2px solid white;
+            background: $table-head-background-color;
+            height: 30px;
+            padding: 0;
+          }
+          th:last-child {
+            border: none;
+          }
+        }
+      }
+      tbody {
+        tr {
+          td {
+            text-align: center;
+            vertical-align: top;
+            padding: 26px 0;
+            border-bottom: $table-td-border;
+            border-top: $table-td-border;
+
+            .actions {
+              a {
+                &:hover {
+                  color: $meta-title-color;
+                }
+              }
+              .manage-icon {
+                width: 24px;
+                height: 16px;
+                font-size: 12px;
+                line-height: 1.42;
+                text-align: left;
+                color: #f9a300;
+              }
+            }
+          }
+          td:first-child {
+            border-left: $table-td-border;
+          }
+          .max-width-140 {
+            max-width: 140px;
+          }
+          td:last-child {
+            border-right: $table-td-border;
+          }
+          &.disabled {
+            color: $table-disable-font-color;
+            td:first-child {
+              min-width: 100px;
+              background-image: url(./images/stop.svg);
+              background-position: top left;
+              background-repeat: no-repeat;
+              background-size: 35px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,81 @@
+@import "../../../../styles/index";
+
+$image-width: 40px;
+$image-width-large: 55px;
+
+.step :global {
+  display: inline-block;
+  text-align: center;
+
+  .step {
+    height: $image-width;
+
+    .icon-box {
+      height: $image-width;
+
+      .icon {
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        border-radius: 50%;
+        position: relative;
+        z-index: 1;
+
+        &.icon-normal {
+          width: $image-width;
+          height: $image-width;
+        }
+
+        &.icon-large {
+          width: $image-width-large;
+          height: $image-width-large;
+          top: - ($image-width-large - $image-width) / 2;
+        }
+      }
+    }
+
+    .firstBar {
+      position: relative;
+      border-top: dashed 1px rgba(219, 217, 219, 0.99);
+      width: 150%;
+      top: -$image-width/2;
+    }
+
+    .lastBar {
+      position: relative;
+      border-top: dashed 1px rgba(219, 217, 219, 0.99);
+      width: 50%;
+      left: 50%;
+      top: -$image-width/2;
+    }
+
+    .normalBar {
+      position: relative;
+      border-top: dashed 1px rgba(219, 217, 219, 0.99);
+      left: 50%;
+      top: -$image-width/2;
+    }
+  }
+
+  .nameDone {
+    font-family: $font-family;
+    font-weight: bold;
+    line-height: 1.36;
+    color: #05ba0b;
+    margin-top: 10px;
+  }
+
+  .nameActive {
+    font-family: $font-family;
+    font-weight: bold;
+    line-height: 1.36;
+    margin-top: 10px;
+  }
+
+  .nameInactive {
+    font-family: $font-family;
+    font-weight: bold;
+    line-height: 1.36;
+    color: #959495;
+    margin-top: 10px;
+  }
+}

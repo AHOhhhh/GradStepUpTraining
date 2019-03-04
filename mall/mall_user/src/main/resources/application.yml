@@ -1,0 +1,26 @@
+spring:
+  application:
+      name: user-service
+  datasource:
+    url: jdbc:mysql://127.0.0.1/mall_micro_service_user?characterEncoding=utf-8
+    username: root
+    password: root
+  jpa:
+    show-sql: true
+    database: mysql
+server:
+  port: 7979
+
+
+management:
+  endpoint:
+    health:
+      enabled: true
+#      show-details: always
+    info:
+      enabled: true
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/

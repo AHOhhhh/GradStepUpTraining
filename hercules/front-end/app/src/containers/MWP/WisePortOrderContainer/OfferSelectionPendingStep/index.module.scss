@@ -1,0 +1,19 @@
+.offer-selection-step {
+  background: transparent;
+  width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+
+  .main-container {
+    width: 910px;
+    float: left;
+  }
+  .side-container {
+    width: 270px;
+    float: right;
+    margin-bottom: 30px;
+  }
+  .loading {
+    margin-bottom: 30px;
+  }
+}

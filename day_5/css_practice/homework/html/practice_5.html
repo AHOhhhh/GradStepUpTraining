@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>字体</title>
+  <style type="text/css">
+
+    </style>
+</head>
+
+<body>
+  <p>CSS中五种通用的字体系列是： </p>
+  <ul>
+    <li>Serif 字体</li>
+    <li>Sans-serif 字体</li>
+    <li>Monospace 字体</li>
+    <li>Cursive 字体</li>
+    <li>Fantasy 字体</li>
+  </ul>
+  <p>设置多个字体用：font-family: Georgia, serif;注意项：在所有 font-family 规则中都提供一个通用字体系列。这样就提供了一条后路，在用户代理无法提供与规则匹配的特定字体时，就可以选择一个候选字体。</p>
+
+  <p>px em rem的区别：</p>
+  <ul>
+    <li>px像素（Pixel）。相对长度单位。像素px是相对于显示器屏幕分辨率而言的</li>
+    <li>em是相对长度单位。相对于当前对象内文本的字体尺寸。如当前对行内文本的字体尺寸未被人为设置，则相对于浏览器的默认字体尺寸</li>
+    <li>rem是CSS3新增的一个相对单位（root em，根em）。这个单位与em区别在于使用rem为元素设定字体大小时，仍然是相对大小，但相对的只是HTML根元素。</li>
+  </ul>
+
+  <p style="font-weight: bold;">This is a paragraph</p>
+  <p style="font-variant: small-caps;" >This is a paragraph </p>
+
+</body>
+
+</html>

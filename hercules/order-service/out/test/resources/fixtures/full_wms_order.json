@@ -1,0 +1,29 @@
+{
+  "contact": {
+    "name": "雷凌",
+    "address": "陕西省西安市雁塔区天谷八路与云水二路十字环普产业科技园E栋3103",
+    "telephone": "029-12345678",
+    "cellphone": "15266668888"
+  },
+  "type": "Open",
+  "status": "Audited",
+  "chargingRules": [
+    {
+      "quantityFrom": 0,
+      "quantityTo": 100,
+      "unitPrice": 0.28
+    },
+    {
+      "quantityFrom": 100,
+      "quantityTo": null,
+      "unitPrice": 0.15
+    }
+  ],
+  "minPrice": 10,
+  "maxPrice": 100,
+  "currency": "CNY",
+  "approvedPrice": 1234,
+  "effectiveFrom": "2017-11-11",
+  "effectiveTo": "2017-11-16",
+  "enterpriseShortName":"Thoughtworks"
+}

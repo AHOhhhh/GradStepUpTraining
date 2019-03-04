@@ -1,0 +1,83 @@
+@import "../../../../../styles/variables";
+
+$link-width: 80px;
+
+.container {
+  padding: 40px;
+  margin-bottom: 40px;
+  background-color: #fff;
+
+  h2 {
+    margin-bottom: 32px;
+    font-size: 22px;
+    color: #000;
+  }
+
+  .progress-container {
+    position: relative;
+    text-align: center;
+  }
+
+  .tip {
+    position: absolute;
+    top: 50px;
+    right: calc(50% + 180px);
+    font-size: 16px;
+    color: $font-light-gray;
+  }
+
+  .broken-line {
+    position: absolute;
+    width: 70px;
+    top: 58px;
+    right: calc(50% + 105px);
+  }
+
+  .link {
+    position: absolute;
+    left: calc(50% - #{$link-width / 2});
+    bottom: 30px;
+    width: $link-width;
+    padding: 5px 0;
+    text-align: center;
+    box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.03);
+    border: solid 1px $navigation-background-color;
+    border-radius: 4px;
+    &:hover, &:focus, &:active {
+      text-decoration: none;
+    }
+  }
+
+  .error-icon {
+    font-size: 22px;
+    color: #4f4fdf;
+  }
+
+  :global .ant-progress-text {
+    top: 80px;
+    font-size: 56px;
+  }
+
+  .feedback {
+    font-size: 14px;
+    line-height: 2.36;
+  }
+
+  .rejected {
+    text-align: center;
+
+    p {
+      font-size: 22px;
+      vertical-align: top;
+      display: inline-block;
+      padding-left: 20px;
+    }
+    i {
+      font-size: 30px;
+    }
+  }
+
+  .no-feedback {
+    text-align: center;
+  }
+}

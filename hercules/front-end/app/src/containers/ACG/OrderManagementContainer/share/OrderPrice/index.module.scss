@@ -1,0 +1,105 @@
+@import "../../../../../../styles/variables";
+
+.order-price {
+  vertical-align: top;
+  padding: 20px;
+  width: 270px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  box-shadow: 0 1px 4px 1px rgba(233, 233, 233, 0.5);
+  .status {
+    .title {
+      height: 92px;
+      line-height: 92px;
+      font-size: 22px;
+      font-weight: bold;
+      color: #a5c615;
+      text-align: center;
+      margin-bottom: 20px;
+      img, span {
+        vertical-align: middle;
+        margin: 0 2px;
+      }
+    }
+  }
+  .item {
+    line-height: 1.5;
+    color: #000000;
+    margin: 8px 0;
+    .title {
+      opacity: 0.5;
+      text-align: right;
+    }
+    .value {
+      text-align: right;
+      float: right;
+      padding-right: 16px;
+      word-break: break-all;
+    }
+  }
+
+  .summary {
+    margin-top: 22px;
+    height: 36px;
+    line-height: 36px;
+    .title {
+      font-size: 16px;
+    }
+    .value {
+      font-size: 24px;
+      color: #4f4fdf;
+    }
+  }
+
+  .payment-btn {
+    background-color: $content-background-color;
+    text-align: center;
+    margin: 40px 0 20px;
+
+    .button {
+      font-size: 18px;
+      height: 54px;
+      width: 180px;
+    }
+
+    .button-disabled{
+      cursor: not-allowed;
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+
+    .tips {
+      font-size: 12px;
+      line-height: 1.5;
+      color: $dark-gray;
+      text-align: left;
+      width: 185px;
+      margin: 0 auto;
+      padding-top: 15px;
+
+      .tips-icon {
+        background-image: url("../../../share/images/invalid-name.svg");
+        background-repeat: no-repeat;
+        display: inline-block;
+        width: 18px;
+        height: 14px;
+        margin-top: 2px;
+      }
+      .tips-icon-offline-failure{
+        color: red;
+      }
+
+      .tips-info {
+        display: inline-block;
+        width: calc(100% - 18px);
+        vertical-align: top;
+        line-height: 18px;
+      }
+      .tips-info-offline-failure{
+        color: red;
+      }
+      .audit-opinion{
+        margin-left: 18px;
+      }
+    }
+  }
+}

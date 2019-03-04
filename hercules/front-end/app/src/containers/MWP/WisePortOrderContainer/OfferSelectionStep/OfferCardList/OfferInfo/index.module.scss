@@ -1,0 +1,26 @@
+.offer-info {
+  text-align: left;
+  color: #000000;
+  .contain-info {
+    opacity: 0.5;
+    .icon {
+      border-radius: 2.4px;
+      padding-right: 8px;
+    }
+    .dollarIcon {
+      background-image: url("image/dollar.png");
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 14px;
+      height: 14px;
+      display: inline-block;
+      vertical-align: sub;
+    }
+  }
+  .contain-result {
+    font-size: 16px;
+  }
+  table {
+    width: 100%;
+  }
+}

@@ -1,0 +1,25 @@
+@import "variables";
+
+.ant-calendar-picker:hover .ant-calendar-picker-input:not(.ant-input-disabled) {
+  border-color: $meta-title-color;
+}
+
+.ant-calendar-picker-container {
+  .ant-calendar {
+    width: 100%;
+    border-radius: 0;
+  }
+}
+
+.ant-calendar-picker{
+  width: 100%;
+}
+
+.ant-calendar-disabled-cell.ant-calendar-today .ant-calendar-date:before {
+  width: 34px;
+}
+
+.ant-calendar-range .ant-calendar-input, .ant-calendar-range .ant-calendar-time-picker-input{
+  height: 25px;
+  padding: 4px 25px;
+}

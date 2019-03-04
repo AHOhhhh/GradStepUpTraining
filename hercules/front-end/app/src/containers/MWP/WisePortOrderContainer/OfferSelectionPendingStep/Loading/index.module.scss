@@ -1,0 +1,33 @@
+@import "../../../../../../styles/colors";
+
+.load-container :global {
+  width: 100%;
+  height: 435px;
+  border-radius: 4px;
+  margin-bottom: 40px;
+  background-color: #ffffff;
+  text-align: center;
+  .load-info {
+    font-size: 22px;
+    line-height: 1.23;
+    color: #000000;
+    padding-top: 132px;
+  }
+  .wait-time {
+    opacity: 0.5;
+    line-height: 1.5;
+    margin-top: 32px;
+  }
+  .load-fresh {
+    margin-top: 82px;
+    color: #808080;
+    .fresh {
+      color: $content-blue;
+      cursor: pointer;
+    }
+    .fresh:hover {
+      text-decoration: underline !important;
+    }
+
+  }
+}

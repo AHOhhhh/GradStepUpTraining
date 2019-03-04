@@ -1,0 +1,16 @@
+hlp:
+  services:
+    webapi-gateway:
+      host: localhost
+    user-service:
+      host: localhost
+    order-service:
+      host: localhost
+    config-server:
+      host: localhost
+    acg-mock-server:
+      host: localhost
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/order

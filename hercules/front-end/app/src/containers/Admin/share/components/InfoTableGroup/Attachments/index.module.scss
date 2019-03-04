@@ -1,0 +1,47 @@
+@import "../../../../../../../styles/colors";
+
+.attachments {
+  padding: 0px 10px;
+  .division {
+    height: 1px;
+    opacity: 0.6;
+    border: solid 1px #dbd9db;
+    margin: 11px 0 15px 0;
+  }
+
+  .item {
+    display: inline-block;
+    width: 100%;
+    margin: 5px 0;
+    line-height: 1;
+    text-align: left;
+
+    .item-label {
+      display: inline-block;
+      width: 130px;
+      color: #959495;
+    }
+
+    .attachment {
+      height: 17px;
+      line-height: 17px;
+      margin-right: 52.4px;
+
+      .attachment-icon {
+        background-image: url("../../../../../User/EnterpriseInfoContainer/images/attachment.svg");
+        background-repeat: no-repeat;
+        display: inline-block;
+        width: 12px;
+        height: 15px;
+        vertical-align: middle;
+      }
+
+      .file-name {
+        a {
+          color: #959495;
+        }
+        margin-left: 5px;
+      }
+    }
+  }
+}

@@ -1,0 +1,58 @@
+:global {
+  .price-chang-tips-modal {
+
+    .ant-modal-content {
+      text-align: center;
+      .ant-modal-close {
+        display: none;
+      }
+      .ant-modal-header {
+        display: none;
+      }
+      .ant-modal-body {
+        height: 206px;
+        .content {
+          margin-top: 45px;
+          margin-bottom: 40px;
+          font-size: 20px;
+          line-height: 1.5;
+          text-align: center;
+          color: rgb(0, 0, 0);
+        }
+        .button {
+          width: 140px;
+          height: 40px;
+          font-size: 18px;
+          line-height: 1.5;
+          text-align: center;
+        }
+        .payment-failure {
+          opacity: 0.5;
+          color: #000000;
+          background-color: #ffffff;
+          box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.04);
+          border: solid 1px rgba(0, 0, 0, 0.15);
+        }
+        .payment-success {
+          background-color: #4f4fdf;
+          box-shadow: 0 6px 16px 0 rgba(0, 0, 0, 0.12);
+          color: #ffffff;
+        }
+      }
+      .ant-modal-footer {
+        display: none;
+      }
+    }
+  }
+}
+
+.button {
+  margin-right: 15px;
+}
+
+:global .button {
+  width: 1000px;
+}
+
+
+

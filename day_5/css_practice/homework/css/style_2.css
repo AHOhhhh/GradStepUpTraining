@@ -1,0 +1,17 @@
+p {
+  font-weight: bold;
+  text-align: center;
+  color: red;
+}
+
+#test {
+  font-weight: bold;
+  text-align: center;
+  color: red;
+}
+
+.title {
+  font-weight: bold;
+  text-align: center;
+  color: red;
+}

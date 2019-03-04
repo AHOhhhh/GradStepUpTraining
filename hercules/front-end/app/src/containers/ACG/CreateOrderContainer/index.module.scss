@@ -1,0 +1,173 @@
+@import "../../../../styles/variables";
+@import "../../../../styles/colors";
+
+$padding-left: 40px;
+
+.create-order {
+  .title {
+    font-size: 32px;
+    line-height: 1.5;
+    text-align: left;
+    color: #000000;
+    padding-top: 16px;
+    padding-bottom: 25px;
+  }
+
+  .content-wrapper {
+    background-color: $content-background-color;
+    margin: 10px 0;
+    padding: 40px 0;
+
+    .content-title {
+      padding-bottom: 25px;
+      font-size: 24px;
+      line-height: 1.13;
+      text-align: left;
+      color: #000000;
+      padding-left: $padding-left;
+    }
+
+    &:nth-last-child(1) {
+      margin-bottom: 180px;
+    }
+  }
+}
+
+.create-order :global {
+  .box-title, .contacts-box, .operation {
+    padding-left: $padding-left;
+  }
+
+  .contacts-box {
+    padding-right: $padding-left;
+  }
+}
+
+.operate {
+  margin: 25px 0;
+  .button {
+    height: 40px;
+    color: $font-light-gray;
+
+    &.primary {
+      color: $content-background-color;
+    }
+  }
+}
+
+.modal-footer {
+  .button {
+    width: 140px;
+    height: 40px;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+
+    &.cancel {
+      color: #000000;
+      opacity: 0.5;
+    }
+  }
+
+  .tips {
+    font-size: 12px;
+    line-height: 1.5;
+    color: $dark-gray;
+    margin-top: 15px;
+
+    .tips-icon {
+      background-image: url("../share/images/invalid-name.svg");
+      background-repeat: no-repeat;
+      display: inline-block;
+      width: 18px;
+      height: 14px;
+      vertical-align: middle;
+    }
+
+    .tips-info {
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+}
+
+.calc-price-failure {
+  margin-top: 60px;
+}
+
+.price-items {
+  text-align: left;
+  padding: 15px 65px 0 65px;
+
+  .label, .text {
+    display: inline-block;
+    line-height: 1.5;
+    color: #000000;
+  }
+
+  .label {
+    width: 110px;
+    opacity: 0.5;
+    font-size: 16px;
+    text-align: left;
+  }
+
+  .text {
+    width: calc(100% - 110px);
+    padding-left: 20px;
+    text-align: right;
+
+    &.total-price {
+      font-size: 24px;
+      color: $navigation-background-color;
+    }
+  }
+}
+
+.districts-content {
+  text-align: left;
+  padding: 0 24px;
+  margin-top: 40px;
+
+  .tips {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.5;
+    color: #000000;
+
+    .invalid-icon {
+      display: inline-block;
+      background-image: url("./images/invalid-name.svg");
+      background-repeat: no-repeat;
+      margin-right: 8px;
+      width: 22px;
+      height: 22px;
+      vertical-align: middle;
+    }
+
+    .invalid-info {
+      display: inline-block;
+      vertical-align: middle;
+
+      .selected-districts {
+        color: $main-color;
+        padding: 0 5px;
+      }
+    }
+  }
+
+  .available-districts {
+    margin-top: 35px;
+
+    .type, .districts {
+      font-size: 14px;
+      line-height: 1.71;
+      color: #000000;
+    }
+
+    .type {
+      opacity: 0.5;
+    }
+  }
+}

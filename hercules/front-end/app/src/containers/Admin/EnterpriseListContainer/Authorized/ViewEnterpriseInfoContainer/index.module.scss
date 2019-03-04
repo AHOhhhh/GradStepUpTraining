@@ -1,0 +1,54 @@
+@import "../../../../../../styles/colors";
+
+.display-info :global {
+  margin-bottom: 150px;
+
+  .breadcrumb-layout {
+    margin-top: 21px;
+    margin-left: 44px;
+  }
+
+  .title {
+    font-size: 22px;
+    line-height: 1;
+    text-align: left;
+    margin: 30px 0 20px 44px;
+  }
+  .enterprise-info {
+    background-color: $content-background-color !important;
+    .enterprise-title {
+      margin: 0;
+      padding: 24px 0 20px 10px;
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 1.22;
+    }
+  }
+
+  .authorization-info {
+    margin: 8px 0 0 0;
+    background-color: $content-background-color !important;
+    .authorization-title {
+      margin: 0;
+      padding: 22px 0 20px 10px;
+      font-weight: bold;
+      line-height: 1.0;
+    }
+  }
+
+  button {
+    background-color: $link-hover-color;
+    color: $content-background-color;
+    width: 155px;
+    height: 35px;
+  }
+  button:hover, :focus {
+    border: none;
+    background-color: $link-hover-color;
+    color: $content-background-color;
+  }
+  .back-button {
+    margin: 0 auto;
+    text-align: center;
+  }
+}

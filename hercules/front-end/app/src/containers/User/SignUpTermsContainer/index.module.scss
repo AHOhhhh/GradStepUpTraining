@@ -1,0 +1,79 @@
+@import "../../../../styles/colors";
+
+$shallow-grey: #dbd9db;
+
+.terms-container {
+  background-color: $shallow-grey;
+  padding: 25px 0;
+
+  .terms {
+    background-color: $content-background-color;
+    padding: 32px 40px;
+    width: 650px;
+    height: 432px;
+    margin: 0 auto;
+
+    .head-title {
+      text-align: center;
+      margin: 0;
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 0.94;
+    }
+
+    .content {
+      width: 100%;
+      margin-top: 24px;
+      padding-bottom: 4px;
+      height: 236px;
+      font-size: 12px;
+      overflow: scroll;
+      h3 {
+        font-size: 12px;
+        font-weight: bold;
+      }
+      .underline-content {
+        text-decoration: underline;
+        color: #000000;
+
+      }
+      .bold-content {
+        font-weight: bold;
+        color: #000000;
+      }
+      .blue-link {
+        color: $content-blue;
+      }
+    }
+
+    .download-link {
+      font-size: 12px;
+      color: #000000;
+      .line {
+        border: solid 1px #f5f5f5;
+      }
+      a {
+        display: inline-block;
+        font-size: 12px;
+        line-height: 1.67;
+        color: $navigation-background-color;
+        margin-top: 3px;
+        text-decoration: none;
+
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .confirm-buttons {
+      margin-top: 25px;
+      text-align: center;
+
+      .button{
+        margin: 0 5px;
+        box-shadow: 0 6px 16px 0 rgba(0,0,0,0.06);
+      }
+    }
+  }
+}

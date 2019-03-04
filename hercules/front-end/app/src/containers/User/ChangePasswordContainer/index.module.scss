@@ -1,0 +1,60 @@
+@import "../../../../styles/variables";
+
+.change-password {
+  background-color: $content-background-color;
+  margin-top: 20px;
+
+  .change-password-header {
+    margin: 0 20px;
+    border-bottom: 2px rgba(219, 217, 219, 0.6) solid;
+    .change-password-title {
+      padding-left: 50px;
+      font-size: 18px;
+      line-height: 43px;
+    }
+  }
+
+  .step-box {
+    margin: 0 auto;
+    background-color: $content-background-color;
+    height: 143px;
+    padding: 40px 100px 40px 100px;
+  }
+
+  .succeed-content {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    padding: 40px 0 130px 0px;
+    text-align: center;
+
+    .succeed-icon {
+      display: inline-block;
+      background-image: url("./images/success.svg");
+      background-repeat: no-repeat;
+      height: 65px;
+      width: 65px;
+      vertical-align: middle;
+      margin-right: 19px;
+    }
+
+    .succeed-info {
+      display: inline-block;
+      vertical-align: middle;
+
+      p {
+        font-size: 24px;
+        font-weight: bold;
+      }
+    }
+
+    .timer-guide {
+      margin-left: 84px;
+      .timer {
+        color: #959495;
+      }
+      .highlight-span {
+        color: $meta-title-color;
+      }
+    }
+  }
+}

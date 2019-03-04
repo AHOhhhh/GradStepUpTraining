@@ -1,0 +1,29 @@
+.info-table-group {
+  background-color: #ffffff;
+  .table-info {
+    width: 100%;
+    .title-row {
+      background-color: rgba(219, 217, 219, 0.99) !important;
+      td {
+        padding: 5px 10px;
+        font-weight: bold;
+      }
+    }
+
+    .info-row {
+      .prop-name-col {
+        vertical-align: top;
+        color: #959495;
+        padding: 10px 0px 0px 10px;
+        white-space:nowrap;
+      }
+      .value-col {
+        vertical-align: top;
+        padding: 10px 0px 0px 10px;
+        width: 40%;
+        word-warp: break-word;
+        word-break: break-all;
+      }
+    }
+  }
+}

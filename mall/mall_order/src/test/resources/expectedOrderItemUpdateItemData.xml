@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataset>
+    <order_item product_id="1" product_count="10"/>
+    <order_item product_id="2" product_count="2"/>
+</dataset>
